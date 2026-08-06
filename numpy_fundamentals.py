@@ -1,3 +1,7 @@
+# NumPy Fundamentals Task
+# Array creation, broadcasting,
+# vectorised operations, matrix multiplication,
+# and statistics
 import numpy as np
 import pandas as pd
 
