@@ -41,3 +41,19 @@ Completed CIA Mentor Mode review before final commit.
 - Added terminal output screenshot (pandas_output.png)
 - Verified CSV and Parquet export
 - Completed CIA Mentor review (2 interactions)
+# W1D3 Data Loading, Cleaning & Inspection
+
+## Completed Tasks
+
+✅ Loaded CSV dataset using Pandas  
+✅ Inspected shape, columns, data types, and statistics  
+✅ Checked missing values and duplicate records  
+✅ Cleaned dataset using reusable functions  
+✅ Implemented missing value handling  
+✅ Saved cleaned dataset successfully  
+✅ Added logging and pathlib file handling  
+✅ Tested script execution successfully  
+
+## CIA Review
+
+✅ Completed 2 CIA interactions
