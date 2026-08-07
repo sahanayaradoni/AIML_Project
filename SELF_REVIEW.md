@@ -112,3 +112,11 @@ Overall, the dataset is clean and analysis-ready. The EDA process provided usefu
 ✅ Completed required commits  
 ✅ Raised Pull Request for review  
 ✅ Updated PR after CIA feedback and improvements
+
+## W1D5: Data Visualisation — Matplotlib & Seaborn
+
+✅ Created visualizations using Matplotlib and Seaborn.  
+✅ Generated histogram, box plot, scatter plot, count plot, and correlation heatmap.  
+✅ Saved visualization outputs as evidence.  
+✅ Reviewed code with CIA and received improvement suggestions.  
+✅ Committed and pushed changes to Git branch.
