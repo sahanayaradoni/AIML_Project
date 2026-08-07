@@ -59,3 +59,15 @@ Completed CIA Mentor Mode review before final commit.
 ## CIA Review
 
 ✅ Completed 2 CIA interactions
+
+## W1D4 EDA Narrative
+
+# Exploratory Data Analysis (EDA) Narrative
+
+The dataset contains the scores of 10 students in three subjects: Math, Science, and English. The initial inspection using `df.info()` confirmed that all three columns are numeric (`int64`) and that there are no missing values. The dataset has a shape of 10 rows and 3 columns, making it clean and suitable for analysis.
+
+The statistical summary generated with `df.describe()` shows that the average scores are approximately 82 in Math, 84.2 in Science, and 82.7 in English. The standard deviations indicate a moderate variation in student performance across all subjects. The minimum and maximum values show that the scores range from 65 to 92 in Math, 70 to 95 in Science, and 68 to 94 in English.
+
+No duplicate records or missing values were found, so no additional cleaning was required before analysis. Distribution plots indicate that the scores are reasonably balanced without significant outliers. The correlation heatmap helps identify relationships between subjects and suggests that students who perform well in one subject also tend to perform well in the others.
+
+Overall, the dataset is clean, complete, and analysis-ready. It provides a reliable foundation for further data visualization, statistical analysis, and future machine learning tasks such as student performance prediction and educational data modeling.
