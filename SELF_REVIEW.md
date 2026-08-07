@@ -1,73 +1,353 @@
-# Self Review Checklist
+from pathlib import Path
 
-✅ NumPy installed in virtual environment  
-✅ Created 1D, 2D, and 3D arrays  
-✅ Verified array shapes  
-✅ Implemented broadcasting  
-✅ Used vectorised operations without Python loops  
-✅ Performed matrix multiplication  
-✅ Calculated mean, standard deviation, and correlation  
-✅ Used real CSV dataset  
-✅ Created feature branch  
-✅ Completed minimum 2 commits  
-✅ Raised Pull Request
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
 
-# Pandas Data Manipulation - Self Review
+# -------------------------------------------------
 
-## Completed Tasks
+# Visualization Settings
 
-- Loaded Indian CSV dataset using Pandas
-- Checked shape, data types, and first 10 rows
-- Implemented filtering operation
-- Implemented groupby operation
-- Implemented merge operation
-- Implemented pivot table operation
-- Exported cleaned DataFrame to CSV and Parquet
-- Compared file sizes
+# -------------------------------------------------
 
-## Code Quality
+sns.set_theme(
+style="whitegrid",
+palette="colorblind"
+)
 
-- Used reusable Python structure
-- Added comments for each Pandas operation
-- Used relative file paths
-- Maintained clean project structure
+# -------------------------------------------------
 
-## CIA Review
+# File Paths
 
-Completed CIA Mentor Mode review before final commit.
+# -------------------------------------------------
 
-## Output Evidence
+DATA_PATH = Path("dataset/cleaned_students.csv")
+OUTPUT_DIR = Path("eda_outputs")
 
-- Added terminal output screenshot (pandas_output.png)
-- Verified CSV and Parquet export
-- Completed CIA Mentor review (2 interactions)
+OUTPUT_DIR.mkdir(
+exist_ok=True
+)
 
-# W1D3 Data Loading, Cleaning & Inspection
+# -------------------------------------------------
 
-## Completed Tasks
+# Load Dataset
 
-✅ Loaded CSV dataset using Pandas  
-✅ Inspected shape, columns, data types, and statistics  
-✅ Checked missing values and duplicate records  
-✅ Cleaned dataset using reusable functions  
-✅ Implemented missing value handling  
-✅ Saved cleaned dataset successfully  
-✅ Added logging and pathlib file handling  
-✅ Tested script execution successfully  
-✅ W1D3 output evidence generated and verified
+# -------------------------------------------------
 
-## CIA Review
+def load_dataset(path: Path) -> pd.DataFrame:
+"""
+Load CSV dataset using pandas.
 
-✅ Completed 2 CIA interactions
+    Args:
+        path: Location of CSV file.
 
-## W1D4 EDA Narrative
+    Returns:
+        Loaded pandas DataFrame.
+    """
 
-# Exploratory Data Analysis (EDA) Narrative
+    df = pd.read_csv(path)
 
-The dataset contains the scores of 10 students in three subjects: Math, Science, and English. The initial inspection using `df.info()` confirmed that all three columns are numeric (`int64`) and that there are no missing values. The dataset has a shape of 10 rows and 3 columns, making it clean and suitable for analysis.
+    return df
 
-The statistical summary generated with `df.describe()` shows that the average scores are approximately 82 in Math, 84.2 in Science, and 82.7 in English. The standard deviations indicate a moderate variation in student performance across all subjects. The minimum and maximum values show that the scores range from 65 to 92 in Math, 70 to 95 in Science, and 68 to 94 in English.
+# -------------------------------------------------
 
-No duplicate records or missing values were found, so no additional cleaning was required before analysis. Distribution plots indicate that the scores are reasonably balanced without significant outliers. The correlation heatmap helps identify relationships between subjects and suggests that students who perform well in one subject also tend to perform well in the others.
+# Data Inspection
 
-Overall, the dataset is clean, complete, and analysis-ready. It provides a reliable foundation for further data visualization, statistical analysis, and future machine learning tasks such as student performance prediction and educational data modeling.
+# -------------------------------------------------
+
+def inspect_dataset(df: pd.DataFrame) -> None:
+"""
+Display dataset information and statistics.
+"""
+
+    print("\n===== DATASET SHAPE =====")
+    print(df.shape)
+
+    print("\n===== DATA TYPES =====")
+    df.info()
+
+    print("\n===== STATISTICAL SUMMARY =====")
+    print(df.describe())
+
+    print("\n===== MISSING VALUE PERCENTAGE =====")
+
+    missing_percentage = (
+        df.isnull()
+        .mean()
+        * 100
+    )
+
+    print(
+        missing_percentage[
+            missing_percentage > 0
+        ]
+    )
+
+# -------------------------------------------------
+
+# Numeric Distribution Plot
+
+# -------------------------------------------------
+
+def plot_numeric_distribution(
+df: pd.DataFrame,
+column: str,
+output_dir: Path
+) -> None:
+"""
+Create histogram and KDE plot
+for numeric columns.
+"""
+
+    plt.figure(
+        figsize=(8, 5)
+    )
+
+    sns.histplot(
+        df[column].dropna(),
+        kde=True
+    )
+
+    plt.title(
+        f"Distribution of {column}"
+    )
+
+    plt.xlabel(column)
+
+    plt.ylabel(
+        "Count"
+    )
+
+    plt.tight_layout()
+
+    plt.savefig(
+        output_dir /
+        f"{column}_distribution.png",
+        dpi=150,
+        bbox_inches="tight"
+    )
+
+    plt.close()
+
+# -------------------------------------------------
+
+# Correlation Heatmap
+
+# -------------------------------------------------
+
+def plot_correlation_heatmap(
+df: pd.DataFrame,
+numeric_columns,
+output_dir: Path
+) -> None:
+"""
+Generate correlation heatmap.
+"""
+
+    plt.figure(
+        figsize=(8, 6)
+    )
+
+    correlation = (
+        df[numeric_columns]
+        .corr()
+    )
+
+    sns.heatmap(
+        correlation,
+        annot=True,
+        cmap="coolwarm",
+        fmt=".2f"
+    )
+
+    plt.title(
+        "Correlation Heatmap"
+    )
+
+    plt.tight_layout()
+
+    plt.savefig(
+        output_dir /
+        "correlation_heatmap.png",
+        dpi=150,
+        bbox_inches="tight"
+    )
+
+    plt.close()
+
+# -------------------------------------------------
+
+# Category Count Plot
+
+# -------------------------------------------------
+
+def plot_category_counts(
+df: pd.DataFrame,
+column: str,
+output_dir: Path
+) -> None:
+"""
+Create top category count plot.
+"""
+
+    plt.figure(
+        figsize=(8, 5)
+    )
+
+    top_categories = (
+        df[column]
+        .value_counts()
+        .head(10)
+    )
+
+    sns.barplot(
+        x=top_categories.index,
+        y=top_categories.values
+    )
+
+    plt.title(
+        f"Top 10 {column} Counts"
+    )
+
+    plt.xlabel(column)
+
+    plt.ylabel(
+        "Count"
+    )
+
+    plt.xticks(
+        rotation=45
+    )
+
+    plt.tight_layout()
+
+    plt.savefig(
+        output_dir /
+        f"{column}_top10_counts.png",
+        dpi=150,
+        bbox_inches="tight"
+    )
+
+    plt.close()
+
+# -------------------------------------------------
+
+# EDA Narrative
+
+# -------------------------------------------------
+
+EDA_NARRATIVE = """
+
+# Exploratory Data Analysis Narrative
+
+The dataset contains student performance information including
+scores from different subjects. Exploratory Data Analysis was
+performed using Pandas, Matplotlib, and Seaborn to understand
+dataset structure, quality, and patterns.
+
+The dataset was inspected using shape, info(), describe(),
+and missing value analysis. These steps helped identify the
+number of records, available features, data types, and data
+quality issues.
+
+Numerical features were analyzed using distribution plots to
+understand score patterns and identify possible outliers.
+Correlation analysis was performed using a heatmap to study
+relationships between numerical variables.
+
+Categorical features were visualized using count plots to
+understand category frequency and distribution.
+
+The analysis showed that the dataset is suitable for further
+machine learning tasks after necessary preprocessing.
+Potential improvements before modeling include handling missing
+values, checking duplicate records, and treating abnormal values.
+
+Overall, EDA provided useful insights into student performance
+patterns and prepared the dataset for future statistical
+analysis and machine learning model development.
+"""
+
+# -------------------------------------------------
+
+# Main Execution
+
+# -------------------------------------------------
+
+def main():
+
+    df = load_dataset(
+        DATA_PATH
+    )
+
+    print(
+        "===== DATASET LOADED SUCCESSFULLY ====="
+    )
+
+    inspect_dataset(
+        df
+    )
+
+
+    numeric_columns = (
+        df.select_dtypes(
+            include="number"
+        )
+        .columns
+    )
+
+
+    for column in numeric_columns:
+
+        plot_numeric_distribution(
+            df,
+            column,
+            OUTPUT_DIR
+        )
+
+
+    plot_correlation_heatmap(
+        df,
+        numeric_columns,
+        OUTPUT_DIR
+    )
+
+
+    categorical_columns = (
+        df.select_dtypes(
+            include="object"
+        )
+        .columns
+    )
+
+
+    for column in categorical_columns:
+
+        plot_category_counts(
+            df,
+            column,
+            OUTPUT_DIR
+        )
+
+
+    with open(
+        "EDA_NARRATIVE.md",
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        file.write(
+            EDA_NARRATIVE
+        )
+
+
+    print("\nEDA completed successfully!")
+    print(
+        "Plots saved inside eda_outputs folder"
+    )
+    print(
+        "EDA narrative saved as EDA_NARRATIVE.md"
+    )
+
+if **name** == "**main**":
+main()
