@@ -1,25 +1,29 @@
 
-
 # Exploratory Data Analysis Narrative
 
-The dataset contains student performance information including scores from different subjects. 
-Exploratory Data Analysis was performed using Pandas, Matplotlib, and Seaborn to understand 
-the structure, quality, and patterns present in the data.
+The dataset contains student performance information including
+scores from different subjects. Exploratory Data Analysis was
+performed using Pandas, Matplotlib, and Seaborn to understand
+dataset structure, quality, and patterns.
 
-The dataset was first inspected using shape, info(), describe(), and missing value analysis. 
-The analysis helps identify the number of records, available features, data types, and the 
-presence of incomplete values. Numerical columns were analyzed using distribution plots to 
-understand score patterns and identify possible unusual values or outliers.
+The dataset was inspected using shape, info(), describe(),
+and missing value analysis. These steps helped identify the
+number of records, available features, data types, and data
+quality issues.
 
-A correlation heatmap was generated to study relationships between numerical features. 
-The correlation results help understand whether student scores in different subjects are 
-related to each other. Category count plots were also created to analyze the frequency of 
-different categorical values.
+Numerical features were analyzed using distribution plots to
+understand score patterns and identify possible outliers.
+Correlation analysis was performed using a heatmap to study
+relationships between numerical variables.
 
-Some suspicious areas that may require attention include possible outliers in scores, 
-incorrect data entries, and imbalance in category values. Before applying machine learning 
-models, the dataset should be cleaned by handling missing values, removing duplicate records, 
-and treating abnormal values.
+Categorical features were visualized using count plots to
+understand category frequency and distribution.
 
-Overall, EDA provided useful insights into the dataset and prepared it for further machine 
-learning analysis and model development.
+The analysis showed that the dataset is suitable for further
+machine learning tasks after necessary preprocessing.
+Potential improvements before modeling include handling missing
+values, checking duplicate records, and treating abnormal values.
+
+Overall, EDA provided useful insights into student performance
+patterns and prepared the dataset for future statistical
+analysis and machine learning model development.

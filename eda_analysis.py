@@ -1,114 +1,201 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 from pathlib import Path
 
-# -----------------------------
-# File paths
-# -----------------------------
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+
+
+# -------------------------------------------------
+# Visualization Settings
+# -------------------------------------------------
+
+sns.set_theme(
+    style="whitegrid",
+    palette="colorblind"
+)
+
+
+# -------------------------------------------------
+# File Paths
+# -------------------------------------------------
 
 DATA_PATH = Path("dataset/cleaned_students.csv")
 OUTPUT_DIR = Path("eda_outputs")
 
-OUTPUT_DIR.mkdir(exist_ok=True)
+OUTPUT_DIR.mkdir(
+    exist_ok=True
+)
 
-# -----------------------------
+
+# -------------------------------------------------
 # Load Dataset
-# -----------------------------
+# -------------------------------------------------
 
-df = pd.read_csv(DATA_PATH)
+def load_dataset(path: Path) -> pd.DataFrame:
+    """
+    Load CSV dataset using pandas.
 
-print("===== DATASET LOADED =====")
+    Args:
+        path: Location of CSV file.
 
-# -----------------------------
+    Returns:
+        Loaded pandas DataFrame.
+    """
+
+    df = pd.read_csv(path)
+
+    return df
+
+
+# -------------------------------------------------
 # Data Inspection
-# -----------------------------
+# -------------------------------------------------
 
-print("\n===== SHAPE =====")
-print(df.shape)
+def inspect_dataset(df: pd.DataFrame) -> None:
+    """
+    Display dataset information and statistics.
+    """
 
-print("\n===== INFO =====")
-df.info()
+    print("\n===== DATASET SHAPE =====")
+    print(df.shape)
 
-print("\n===== DESCRIBE =====")
-print(df.describe())
+    print("\n===== DATA TYPES =====")
+    df.info()
 
-print("\n===== MISSING VALUES =====")
-print(df.isnull().sum())
+    print("\n===== STATISTICAL SUMMARY =====")
+    print(df.describe())
 
+    print("\n===== MISSING VALUE PERCENTAGE =====")
 
-# -----------------------------
-# 5 Observations
-# -----------------------------
+    missing_percentage = (
+        df.isnull()
+        .mean()
+        * 100
+    )
 
-observations = """
-===== OBSERVATIONS =====
-
-1. Dataset contains student performance scores and related information.
-2. Numeric columns contain student marks such as Math, Science, and English scores.
-3. Missing value analysis shows the data quality and identifies columns requiring cleaning.
-4. Distribution plots help understand student score patterns and possible outliers.
-5. Correlation analysis helps identify relationships between different subject scores.
-"""
-
-print(observations)
+    print(
+        missing_percentage[
+            missing_percentage > 0
+        ]
+    )
 
 
-# -----------------------------
-# Numeric Distributions
-# -----------------------------
+# -------------------------------------------------
+# Numeric Distribution Plot
+# -------------------------------------------------
 
-numeric_columns = df.select_dtypes(include="number").columns
+def plot_numeric_distribution(
+        df: pd.DataFrame,
+        column: str,
+        output_dir: Path
+) -> None:
+    """
+    Create histogram and KDE plot
+    for numeric columns.
+    """
 
-for column in numeric_columns:
-    plt.figure(figsize=(6, 4))
+    plt.figure(
+        figsize=(8, 5)
+    )
 
     sns.histplot(
-        df[column],
+        df[column].dropna(),
         kde=True
     )
 
-    plt.title(f"Distribution of {column}")
+    plt.title(
+        f"Distribution of {column}"
+    )
+
+    plt.xlabel(column)
+
+    plt.ylabel(
+        "Count"
+    )
+
+    plt.tight_layout()
 
     plt.savefig(
-        OUTPUT_DIR / f"{column}_distribution.png"
+        output_dir /
+        f"{column}_distribution.png",
+        dpi=150,
+        bbox_inches="tight"
     )
 
     plt.close()
 
 
-# -----------------------------
+# -------------------------------------------------
 # Correlation Heatmap
-# -----------------------------
+# -------------------------------------------------
 
-plt.figure(figsize=(6, 4))
+def plot_correlation_heatmap(
+        df: pd.DataFrame,
+        numeric_columns,
+        output_dir: Path
+) -> None:
+    """
+    Generate correlation heatmap.
+    """
 
-sns.heatmap(
-    df[numeric_columns].corr(),
-    annot=True
-)
+    plt.figure(
+        figsize=(8, 6)
+    )
 
-plt.title("Correlation Heatmap")
+    correlation = (
+        df[numeric_columns]
+        .corr()
+    )
 
-plt.savefig(
-    OUTPUT_DIR / "correlation_heatmap.png"
-)
+    sns.heatmap(
+        correlation,
+        annot=True,
+        cmap="coolwarm",
+        fmt=".2f"
+    )
 
-plt.close()
+    plt.title(
+        "Correlation Heatmap"
+    )
+
+    plt.tight_layout()
+
+    plt.savefig(
+        output_dir /
+        "correlation_heatmap.png",
+        dpi=150,
+        bbox_inches="tight"
+    )
+
+    plt.close()
 
 
-# -----------------------------
-# Top 10 Category Counts
-# -----------------------------
+# -------------------------------------------------
+# Category Count Plot
+# -------------------------------------------------
 
-categorical_columns = df.select_dtypes(include="object").columns
+def plot_category_counts(
+        df: pd.DataFrame,
+        column: str,
+        output_dir: Path
+) -> None:
+    """
+    Create top category count plot.
+    """
 
-for column in categorical_columns:
+    plt.figure(
+        figsize=(8, 5)
+    )
 
-    plt.figure(figsize=(8, 4))
+    top_categories = (
+        df[column]
+        .value_counts()
+        .head(10)
+    )
 
-    df[column].value_counts().head(10).plot(
-        kind="bar"
+    sns.barplot(
+        x=top_categories.index,
+        y=top_categories.values
     )
 
     plt.title(
@@ -116,50 +203,142 @@ for column in categorical_columns:
     )
 
     plt.xlabel(column)
-    plt.ylabel("Count")
+
+    plt.ylabel(
+        "Count"
+    )
+
+    plt.xticks(
+        rotation=45
+    )
+
+    plt.tight_layout()
 
     plt.savefig(
-        OUTPUT_DIR / f"{column}_top10_counts.png"
+        output_dir /
+        f"{column}_top10_counts.png",
+        dpi=150,
+        bbox_inches="tight"
     )
 
     plt.close()
 
 
-# -----------------------------
-# EDA Narrative (200 words)
-# -----------------------------
+# -------------------------------------------------
+# EDA Narrative
+# -------------------------------------------------
 
-eda_narrative = """
-
+EDA_NARRATIVE = """
 # Exploratory Data Analysis Narrative
 
-The dataset contains student performance information including scores from different subjects. 
-Exploratory Data Analysis was performed using Pandas, Matplotlib, and Seaborn to understand 
-the structure, quality, and patterns present in the data.
+The dataset contains student performance information including
+scores from different subjects. Exploratory Data Analysis was
+performed using Pandas, Matplotlib, and Seaborn to understand
+dataset structure, quality, and patterns.
 
-The dataset was first inspected using shape, info(), describe(), and missing value analysis. 
-The analysis helps identify the number of records, available features, data types, and the 
-presence of incomplete values. Numerical columns were analyzed using distribution plots to 
-understand score patterns and identify possible unusual values or outliers.
+The dataset was inspected using shape, info(), describe(),
+and missing value analysis. These steps helped identify the
+number of records, available features, data types, and data
+quality issues.
 
-A correlation heatmap was generated to study relationships between numerical features. 
-The correlation results help understand whether student scores in different subjects are 
-related to each other. Category count plots were also created to analyze the frequency of 
-different categorical values.
+Numerical features were analyzed using distribution plots to
+understand score patterns and identify possible outliers.
+Correlation analysis was performed using a heatmap to study
+relationships between numerical variables.
 
-Some suspicious areas that may require attention include possible outliers in scores, 
-incorrect data entries, and imbalance in category values. Before applying machine learning 
-models, the dataset should be cleaned by handling missing values, removing duplicate records, 
-and treating abnormal values.
+Categorical features were visualized using count plots to
+understand category frequency and distribution.
 
-Overall, EDA provided useful insights into the dataset and prepared it for further machine 
-learning analysis and model development.
+The analysis showed that the dataset is suitable for further
+machine learning tasks after necessary preprocessing.
+Potential improvements before modeling include handling missing
+values, checking duplicate records, and treating abnormal values.
+
+Overall, EDA provided useful insights into student performance
+patterns and prepared the dataset for future statistical
+analysis and machine learning model development.
 """
 
-with open("EDA_NARRATIVE.md", "w") as file:
-    file.write(eda_narrative)
+
+# -------------------------------------------------
+# Main Execution
+# -------------------------------------------------
+
+def main():
+
+    df = load_dataset(
+        DATA_PATH
+    )
+
+    print(
+        "===== DATASET LOADED SUCCESSFULLY ====="
+    )
+
+    inspect_dataset(
+        df
+    )
 
 
-print("\nEDA completed successfully!")
-print("Plots saved inside eda_outputs folder")
-print("EDA narrative saved as EDA_NARRATIVE.md")
+    numeric_columns = (
+        df.select_dtypes(
+            include="number"
+        )
+        .columns
+    )
+
+
+    for column in numeric_columns:
+
+        plot_numeric_distribution(
+            df,
+            column,
+            OUTPUT_DIR
+        )
+
+
+    plot_correlation_heatmap(
+        df,
+        numeric_columns,
+        OUTPUT_DIR
+    )
+
+
+    categorical_columns = (
+        df.select_dtypes(
+            include="object"
+        )
+        .columns
+    )
+
+
+    for column in categorical_columns:
+
+        plot_category_counts(
+            df,
+            column,
+            OUTPUT_DIR
+        )
+
+
+    with open(
+        "EDA_NARRATIVE.md",
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        file.write(
+            EDA_NARRATIVE
+        )
+
+
+    print("\nEDA completed successfully!")
+    print(
+        "Plots saved inside eda_outputs folder"
+    )
+    print(
+        "EDA narrative saved as EDA_NARRATIVE.md"
+    )
+
+
+if __name__ == "__main__":
+    main()
