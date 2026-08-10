@@ -120,3 +120,29 @@ Overall, the dataset is clean and analysis-ready. The EDA process provided usefu
 ✅ Saved visualization outputs as evidence.  
 ✅ Reviewed code with CIA and received improvement suggestions.  
 ✅ Committed and pushed changes to Git branch.
+
+# W2D1: Feature Engineering & Encoding
+
+## Completed Tasks
+
+✅ Applied LabelEncoder on categorical data
+✅ Applied OneHotEncoder on categorical data
+✅ Applied OrdinalEncoder on categorical data
+✅ Documented encoding trade-offs
+✅ Applied StandardScaler
+✅ Applied MinMaxScaler
+✅ Applied RobustScaler
+✅ Generated scaling distribution plot
+✅ Used SelectKBest to identify top 5 features
+✅ Documented why the top 5 features were selected
+✅ Verified feature engineering script execution successfully
+
+## Output Evidence
+
+✅ Generated `scaling_distributions.png`
+✅ Verified encoding and scaling outputs in terminal
+✅ Verified SelectKBest top 5 feature results
+
+## CIA Review
+
+✅ Completed CIA Mentor Mode review
