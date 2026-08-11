@@ -146,3 +146,38 @@ Overall, the dataset is clean and analysis-ready. The EDA process provided usefu
 ## CIA Review
 
 ✅ Completed CIA Mentor Mode review
+
+# W2D2: Feature Scaling & Selection
+
+## Completed Tasks
+
+✅ Applied LabelEncoder on categorical data  
+✅ Applied OneHotEncoder on categorical data  
+✅ Applied OrdinalEncoder on categorical data  
+✅ Documented encoding trade-offs  
+✅ Applied StandardScaler  
+✅ Applied MinMaxScaler  
+✅ Applied RobustScaler  
+✅ Generated scaling distribution plot  
+✅ Used SelectKBest to identify top 5 features  
+✅ Documented why the top 5 features were selected  
+✅ Verified feature engineering script execution successfully
+
+## Output Evidence
+
+✅ Generated `scaling_standard_comparison.png`  
+✅ Verified encoding and scaling outputs in terminal  
+✅ Verified SelectKBest top 5 feature results  
+✅ Removed duplicate/empty `scaling_distributions.png`
+
+## Code Quality
+
+✅ Used reusable Python structure  
+✅ Used appropriate preprocessing techniques  
+✅ Added clear comments and documentation  
+✅ Verified script execution successfully  
+✅ Maintained clean project structure
+
+## CIA Review
+
+⏳ CIA Mentor Mode review pending
