@@ -178,6 +178,54 @@ Overall, the dataset is clean and analysis-ready. The EDA process provided usefu
 ✅ Verified script execution successfully  
 ✅ Maintained clean project structure
 
+# W2D3: Handling Imbalanced Data — SMOTE
+
+## Completed Tasks
+
+✅ Created an imbalanced binary classification dataset
+✅ Split data into training and testing sets
+✅ Checked class distribution before SMOTE
+✅ Applied SMOTE only to the training data
+✅ Balanced the minority class using synthetic samples
+✅ Trained Logistic Regression model
+✅ Evaluated the model using classification report
+✅ Generated confusion matrix
+✅ Generated before and after SMOTE visualizations
+✅ Verified script execution successfully
+
+## Results
+
+- Training distribution before SMOTE:
+  - Class 0: 715
+  - Class 1: 85
+
+- Training distribution after SMOTE:
+  - Class 0: 715
+  - Class 1: 715
+
+- Model accuracy: 95%
+- Minority class precision: 70%
+- Minority class recall: 90%
+- Minority class F1-score: 79%
+
+## Output Evidence
+
+✅ Generated `smote_before.png`
+✅ Generated `smote_after.png`
+✅ Verified terminal output
+
+## Code Quality
+
+✅ Used reusable Python structure
+✅ Added comments explaining each step
+✅ Applied SMOTE only after train-test split
+✅ Kept test data untouched during SMOTE
+✅ Verified successful script execution
+
+## Key Learning
+
+SMOTE (Synthetic Minority Over-sampling Technique) handles class imbalance by generating synthetic samples for the minority class. Applying SMOTE only to the training data helps prevent data leakage.
+
 ## CIA Review
 
-⏳ CIA Mentor Mode review pending
+✅ Completed CIA Mentor Mode review
