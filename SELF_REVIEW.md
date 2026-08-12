@@ -229,3 +229,9 @@ SMOTE (Synthetic Minority Over-sampling Technique) handles class imbalance by ge
 ## CIA Review
 
 ✅ Completed CIA Mentor Mode review
+
+## MLflow Tracking
+
+✅ Created MLflow experiment: `W2D3_SMOTE`
+✅ Logged accuracy, precision, recall, and F1-score
+✅ Verified MLflow tracking during successful script execution
