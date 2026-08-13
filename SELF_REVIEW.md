@@ -235,3 +235,17 @@ SMOTE (Synthetic Minority Over-sampling Technique) handles class imbalance by ge
 ✅ Created MLflow experiment: `W2D3_SMOTE`
 ✅ Logged accuracy, precision, recall, and F1-score
 ✅ Verified MLflow tracking during successful script execution
+
+# W2D4 Self-Review Checklist
+
+✅ Implemented train/test split using `train_test_split`
+✅ Used `random_state=42` for reproducibility
+✅ Used stratified splitting to preserve class distribution
+✅ Implemented 5-fold cross-validation
+✅ Used a Pipeline with StandardScaler and LogisticRegression
+✅ Evaluated test accuracy
+✅ Calculated mean cross-validation accuracy
+✅ Added MLflow experiment tracking
+✅ Generated output evidence
+✅ Code is clean and commented
+✅ Tested the Python script successfully
