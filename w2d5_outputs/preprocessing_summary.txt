@@ -1,0 +1,17 @@
+W2D5 PREPROCESSING SUMMARY
+==================================================
+
+Original dataset shape: (891, 12)
+Processed dataset shape: (891, 158)
+
+Numerical features:
+['Pclass', 'Age', 'SibSp', 'Parch', 'Fare']
+
+Categorical features:
+['Sex', 'Cabin', 'Embarked']
+
+Preprocessing performed:
+- Missing values handled
+- Categorical features encoded
+- Numerical features scaled
+- ML-ready dataset exported
