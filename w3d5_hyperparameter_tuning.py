@@ -337,7 +337,29 @@ else:
 
     print("\nBoth models achieved the same test accuracy.")
 
+# ---------------------------------------------------------
+# 11. Results Summary
+# ---------------------------------------------------------
 
+def print_results_summary(svm_metrics, knn_metrics):
+    """Print a concise summary of the final model results."""
+
+    print("\n" + "=" * 60)
+    print("RESULTS SUMMARY")
+    print("=" * 60)
+
+    print(f"SVM Test Accuracy : {svm_metrics['accuracy']:.4f}")
+    print(f"KNN Test Accuracy : {knn_metrics['accuracy']:.4f}")
+
+    best_accuracy = max(
+        svm_metrics["accuracy"],
+        knn_metrics["accuracy"],
+    )
+
+    print(f"Best Test Accuracy: {best_accuracy:.4f}")
+
+
+print_results_summary(svm_metrics, knn_metrics)
 # ---------------------------------------------------------
 # 11. Completion Message
 # ---------------------------------------------------------
