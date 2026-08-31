@@ -308,3 +308,22 @@ Overall, the dataset is clean and analysis-ready. The EDA process provided usefu
 ✅ Output evidence completed
 ✅ CIA requirements completed
 ✅ Self-review checklist completed
+
+## W3D5 — Hyperparameter Tuning
+
+- ✅ Loaded and prepared the Iris dataset
+- ✅ Created SVM pipeline with StandardScaler
+- ✅ Created KNN pipeline with StandardScaler
+- ✅ Used GridSearchCV for SVM hyperparameter tuning
+- ✅ Used RandomizedSearchCV for KNN hyperparameter tuning
+- ✅ Used 5-fold cross-validation
+- ✅ Evaluated Accuracy, Precision, Recall and F1-score
+- ✅ Compared tuned SVM and KNN models
+- ✅ Best model: KNN with RandomizedSearchCV
+- ✅ Best test accuracy: 96.67%
+- ✅ Added MLflow experiment tracking
+- ✅ Added automated pytest tests
+- ✅ All 5 pytest tests passed
+- ✅ Used minimum 2 descriptive commits
+- ✅ Pushed changes to GitHub
+- ✅ Raised pull request
