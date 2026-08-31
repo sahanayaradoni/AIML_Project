@@ -1,0 +1,2 @@
+model,n_estimators,criterion,max_depth,accuracy
+Random Forest,100,gini,5,0.956140350877193
