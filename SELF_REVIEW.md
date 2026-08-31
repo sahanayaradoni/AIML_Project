@@ -139,3 +139,135 @@ Overall, the dataset is clean and analysis-ready. The EDA process provided usefu
 ✅ Model saved as `w3d2_logistic_regression_model.joblib`.  
 ✅ Results and coefficients saved as CSV files.  
 ✅ Confusion matrix and probability distribution plots generated.
+
+# W3D3: Decision Trees & Random Forests — Self Review
+
+## Completed Tasks
+
+✅ Implemented Decision Tree classification using Gini impurity
+✅ Evaluated Decision Tree classification performance
+✅ Generated confusion matrix
+✅ Visualized the Decision Tree
+✅ Analyzed feature importance
+✅ Demonstrated Decision Tree overfitting
+✅ Tuned Decision Tree hyperparameters to improve generalization
+✅ Implemented Random Forest classification
+✅ Evaluated Random Forest performance
+✅ Compared Original Decision Tree, Tuned Decision Tree, and Random Forest
+✅ Generated output evidence and evaluation CSV files
+✅ Verified Python scripts executed successfully without errors
+
+## Results
+
+✅ Original Decision Tree test accuracy: 91.23%
+✅ Tuned Decision Tree test accuracy: 92.11%
+✅ Random Forest test accuracy: 95.61%
+✅ Random Forest achieved the best test accuracy among the compared models
+
+## Code Quality
+
+✅ Used clean and structured Python code
+✅ Added appropriate comments and documentation
+✅ Used suitable preprocessing and train-test split
+✅ Implemented model evaluation using appropriate metrics
+✅ Generated reusable output artifacts
+✅ Verified implementation through successful execution and testing
+
+## Git Workflow
+
+✅ Created feature branch: `feat/aiml-W3-sahana`
+✅ Completed minimum 2 descriptive commits
+✅ Commit 1: Decision Tree implementation
+✅ Commit 2: Random Forest evaluation
+✅ Pushed changes to GitHub
+✅ Raised Pull Request #7
+✅ Updated PR title and description
+✅ Verified PR has no merge conflicts
+
+## CIA Review
+
+✅ Completed CIA Mentor Mode review
+✅ Completed minimum 2 CIA interactions
+✅ Received code review and improvement suggestions
+✅ Addressed review feedback before final submission
+
+## Output Evidence
+
+✅ Generated Decision Tree visualization
+✅ Generated confusion matrix/evaluation outputs
+✅ Generated feature importance output
+✅ Generated Random Forest evaluation results
+✅ Generated evaluation CSV files
+✅ Verified output evidence successfully
+
+## Self Review Status
+
+✅ All W3D3 practical tasks completed
+✅ Code tested successfully
+✅ Git requirements completed
+✅ Output evidence completed
+✅ CIA requirements completed
+✅ Self-review checklist completed
+
+# W3D4: SVM & KNN — Self Review
+
+## Completed Tasks
+
+✅ Implemented SVM classification
+✅ Implemented KNN classification
+✅ Applied feature scaling using StandardScaler
+✅ Evaluated SVM and KNN using Accuracy, Precision, Recall, and F1-score
+✅ Generated confusion matrices for SVM and KNN
+✅ Performed SVM hyperparameter tuning using GridSearchCV
+✅ Performed KNN hyperparameter tuning using GridSearchCV
+✅ Compared original and tuned SVM and KNN models
+✅ Integrated MLflow experiment tracking
+✅ Generated model comparison visualization
+✅ Created automated pytest tests
+✅ All 6 tests passed successfully
+
+## Results
+
+✅ SVM test accuracy: 96.67%
+✅ KNN test accuracy: 93.33%
+✅ Tuned SVM test accuracy: 93.33%
+✅ Tuned KNN test accuracy: 93.33%
+✅ Best SVM CV accuracy: 97.50%
+✅ Best KNN CV accuracy: 96.67%
+
+## Best Hyperparameters
+
+**SVM:**
+
+- C: 0.1
+- Kernel: linear
+- Gamma: scale
+
+**KNN:**
+
+- Number of neighbors: 5
+- Weights: uniform
+- Metric: euclidean
+
+## Code Quality
+
+✅ Used clean and structured Python code
+✅ Added comments and docstrings
+✅ Used Pipeline with StandardScaler
+✅ Used reproducible train/test split
+✅ Implemented automated tests using pytest
+✅ Verified all tests passed successfully
+
+## Output Evidence
+
+✅ Generated SVM confusion matrix
+✅ Generated KNN confusion matrix
+✅ Generated tuned SVM confusion matrix
+✅ Generated tuned KNN confusion matrix
+✅ Generated model comparison plot
+
+## Git Workflow
+
+✅ Created feature branch: `feat/aiml-W3-sahana`
+✅ Completed first W3D4 commit
+✅ Added W3D4 implementation and test files
