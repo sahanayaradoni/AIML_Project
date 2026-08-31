@@ -1,0 +1,2 @@
+model,criterion,accuracy,tree_depth,number_of_leaves
+Decision Tree,gini,0.9122807017543859,7,19
