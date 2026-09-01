@@ -475,3 +475,38 @@ W4D1_RESULTS.md
 - ⬜ Documentation commit
 - ⬜ Pushed W4D5 changes to `feat/aiml-W4-sahana`
 - ⬜ Verified W4D5 changes in the existing Week 4 PR
+
+## W5D1 - Model Comparison & Ollama Inference
+
+### Completed Tasks
+
+- [x] Implemented model comparison using multiple classification models
+- [x] Trained and evaluated the required models
+- [x] Compared model performance using appropriate evaluation metrics
+- [x] Documented model comparison results
+- [x] Implemented Ollama-based inference
+- [x] Created `w5d1_model_comparison.py`
+- [x] Created `w5d1_ollama_inference.py`
+- [x] Created `W5D1_COMPARISON.md`
+- [x] Verified W5D1 scripts execute successfully
+- [x] Generated required W5D1 documentation
+
+### Git Workflow
+
+- [x] Continued using feature branch `feat/aiml-W5-sahana`
+- [x] Completed Commit 1 with W5D1 implementation files
+- [ ] Completed minimum 2 commits
+- [ ] Completed CIA Mentor Mode Interaction #1
+- [ ] Completed CIA Mentor Mode Interaction #2
+- [ ] Completed documentation/self-review commit
+- [ ] Pushed W5D1 changes to GitHub
+- [ ] Updated Week 5 Pull Request
+
+### Self Review Status
+
+- [x] W5D1 implementation completed
+- [x] Model comparison completed
+- [x] Ollama inference implementation completed
+- [ ] CIA requirements completed
+- [ ] Minimum 2 commits completed
+- [ ] Final Git verification completed
