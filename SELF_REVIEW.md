@@ -328,48 +328,57 @@ Overall, the dataset is clean and analysis-ready. The EDA process provided usefu
 - ✅ Pushed changes to GitHub
 - ✅ Raised pull request
 
-# W4D1 — Model Evaluation Metrics
-
-- ✅ Implemented train/test split with stratification
-- ✅ Calculated Accuracy, Precision, Recall, F1-Score and ROC-AUC
-- ✅ Implemented K-Fold Cross-Validation
-- ✅ Implemented Stratified K-Fold Cross-Validation
-- ✅ Generated confusion matrix
-- ✅ Generated learning curve
-- ✅ Diagnosed overfitting/underfitting using training and validation scores
-- ✅ Used Logistic Regression with StandardScaler pipeline
-- ✅ Added MLflow experiment tracking
-- ✅ Created output evidence
-- ✅ Added automated pytest tests
-- ✅ All 10 W4D1 tests passed
-- ✅ Created feature branch `feat/aiml-W4-sahana`
-- ✅ Completed minimum 2 descriptive commits
-- ✅ Pushed W4D1 branch to GitHub
-- ✅ Raised W4D1 Pull Request
-- ✅ Completed CIA Interaction #1 — Full Stack Mentor Mode
-- ✅ Completed CIA Interaction #2 — Full Stack Mentor Mode
-
-## W4D1 Results
-
-- Accuracy: 98.25%
-- Precision: 98.61%
-- Recall: 98.61%
-- F1-Score: 98.61%
-- ROC-AUC: 99.54%
-- K-Fold CV Mean Accuracy: 97.71%
-- Stratified K-Fold CV Mean Accuracy: 97.37%
-- Training/Validation Gap: 0.88%
-
-## Model Diagnosis
+✅ Implemented train/test split with stratification
+✅ Calculated Accuracy, Precision, Recall, F1-Score and ROC-AUC
+✅ Implemented K-Fold Cross-Validation
+✅ Implemented Stratified K-Fold Cross-Validation
+✅ Generated confusion matrix
+✅ Generated learning curve
+✅ Diagnosed overfitting/underfitting using training and validation scores
+✅ Used Logistic Regression with StandardScaler pipeline
+✅ Added MLflow experiment tracking
+✅ Created output evidence
+✅ Added automated pytest tests
+✅ All 10 W4D1 tests passed
+✅ Created feature branch feat/aiml-W4-sahana
+✅ Completed minimum 2 descriptive commits
+✅ Pushed W4D1 branch to GitHub
+✅ Raised W4D1 Pull Request
+✅ Completed CIA Interaction #1 — Full Stack Mentor Mode
+✅ Completed CIA Interaction #2 — Full Stack Mentor Mode
+W4D1 Results
+Accuracy: 98.25%
+Precision: 98.61%
+Recall: 98.61%
+F1-Score: 98.61%
+ROC-AUC: 99.54%
+K-Fold CV Mean Accuracy: 97.71%
+Stratified K-Fold CV Mean Accuracy: 97.37%
+Training/Validation Gap: 0.88%
+Model Diagnosis
 
 The model appears reasonably well-fitted because the final training and validation accuracies are both high and the training-validation gap is small.
 
-## Testing Evidence
+Testing Evidence
 
-`10 passed in 8.71s`
+10 passed in 8.71s
 
-## Output Evidence
+Output Evidence
+w4d1_outputs/confusion_matrix.png
+w4d1_outputs/learning_curve.png
+W4D1_RESULTS.md
 
-- `w4d1_outputs/confusion_matrix.png`
-- `w4d1_outputs/learning_curve.png`
-- `W4D1_RESULTS.md`
+✅ Demonstrated bias-variance tradeoff using different polynomial model complexities
+✅ Identified overfitting using training vs testing performance
+✅ Implemented Ridge Regression (L2 regularisation)
+✅ Implemented Lasso Regression (L1 regularisation)
+✅ Used GridSearchCV for systematic hyperparameter tuning
+✅ Used RandomizedSearchCV for efficient hyperparameter tuning
+✅ Compared tuned models using RMSE and R²
+✅ Logged parameters, metrics, and artifacts with MLflow
+✅ Created clean, commented implementation
+✅ Created automated pytest tests
+✅ All 7 pytest tests passed
+✅ Generated W4D2 output evidence
+✅ Completed CIA interaction #1
+✅ Completed CIA interaction #2
