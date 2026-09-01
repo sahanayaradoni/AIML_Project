@@ -455,3 +455,23 @@ W4D1_RESULTS.md
 - ✅ Automated tests passed
 - ✅ CIA requirements completed
 - ✅ Output evidence verified
+
+## W4D5 — 1M Capstone: Sentiment Classifier — Deploy & Document
+
+- ✅ Trained Logistic Regression on a binary classification dataset
+- ✅ Printed classification report
+- ✅ Generated confusion matrix
+- ✅ Generated ROC-AUC curve
+- ✅ Calculated ROC-AUC: 0.9938
+- ✅ Trained Random Forest Classifier
+- ✅ Compared Logistic Regression vs Random Forest
+- ✅ Logistic Regression accuracy: 0.9521
+- ✅ Random Forest accuracy: 0.9219
+- ✅ Saved W4D5 output evidence
+- ✅ Created `w4d5_sentiment_classifier.py`
+- ✅ Completed required classification commit
+- ⬜ CIA Full Stack Mentor Mode review
+- ⬜ Completed minimum 2 CIA interactions
+- ⬜ Documentation commit
+- ⬜ Pushed W4D5 changes to `feat/aiml-W4-sahana`
+- ⬜ Verified W4D5 changes in the existing Week 4 PR
