@@ -401,3 +401,57 @@ W4D1_RESULTS.md
 
 - ✅ Verified serialization output files for reproducibility
 - ✅ Documented W4D3 model persistence and validation workflow
+
+## W4D4 — FastAPI Model Serving Endpoint
+
+### Completed Tasks
+
+- ✅ Loaded serialized Iris Logistic Regression model using joblib
+- ✅ Created FastAPI application
+- ✅ Created `GET /` root endpoint
+- ✅ Created `GET /health` health-check endpoint
+- ✅ Created `POST /predict` model prediction endpoint
+- ✅ Added Pydantic input validation
+- ✅ Returned prediction probabilities
+- ✅ Verified Swagger API documentation at `/docs`
+- ✅ Tested valid prediction request successfully
+- ✅ Tested invalid input validation
+- ✅ Created automated pytest tests
+- ✅ All 4 W4D4 API tests passed
+
+### Testing
+
+- ✅ W4D4 pytest result: 4 passed
+- ✅ Existing project pytest result: 25 passed
+- ✅ No test failures
+- ✅ Joblib/NumPy deprecation warnings documented
+
+### API Output Evidence
+
+- ✅ `/health` returned HTTP 200
+- ✅ `/health` confirmed model: `iris_model.joblib`
+- ✅ `/predict` returned HTTP 200
+- ✅ Prediction: class `0`
+- ✅ Class 0 probability: `0.9784`
+- ✅ Swagger UI verified at `/docs`
+
+### CIA Review
+
+- ✅ Completed CIA Full Stack Mentor Mode Interaction #1
+- ✅ Completed CIA Full Stack Mentor Mode Interaction #2
+- ✅ Reviewed implementation before final commit
+
+### Git Workflow
+
+- ✅ Continued using `feat/aiml-W4-sahana`
+- ✅ W4D4 work prepared for minimum 2 descriptive commits
+- ✅ W4D4 work prepared for push to existing Week 4 branch
+- ✅ W4D4 work prepared for existing Week 4 PR
+
+### Self Review Status
+
+- ✅ FastAPI model serving endpoint completed
+- ✅ API functionality verified
+- ✅ Automated tests passed
+- ✅ CIA requirements completed
+- ✅ Output evidence verified
