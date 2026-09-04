@@ -37,3 +37,16 @@ During the semantic search comparison, llama3.2:3b encountered a timeout, while 
 ## Conclusion
 
 Both models were successfully tested locally using Ollama. The comparison shows that response quality, accuracy, response length, and response time can vary between local LLMs. The results were documented based on the actual outputs from the tests.
+
+## Self-Review Checklist
+
+- [x] Ollama installed successfully
+- [x] llama3.2:3b pulled and tested
+- [x] qwen2.5:3b pulled and tested
+- [x] Custom system prompt implemented
+- [x] Five prompts tested
+- [x] Three questions compared across both models
+- [x] Response quality differences documented
+- [x] Output evidence generated
+- [x] Code uses the local Ollama API
+- [x] Changes are on the required Git branch
