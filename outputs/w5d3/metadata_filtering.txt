@@ -1,0 +1,26 @@
+W5D3 — Metadata Filtering
+=========================
+
+Query: machine learning
+Filter: category == "AI/ML"
+
+Result 1
+Document ID: doc_2
+Document: Machine learning enables computers to learn patterns from data.
+
+Result 2
+Document ID: doc_9
+Document: Classification predicts categories or classes from input data.
+
+Result 3
+Document ID: doc_5
+Document: Computer vision allows machines to interpret images and videos.
+
+Result 4
+Document ID: doc_12
+Document: Cross-validation helps evaluate machine learning models reliably.
+
+Result 5
+Document ID: doc_8
+Document: Feature scaling helps machine learning algorithms work effectively with numerical features.
+

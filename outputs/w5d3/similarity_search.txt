@@ -1,0 +1,20 @@
+W5D3 — Cosine Similarity Search
+================================
+
+Query: How can computers understand human language?
+
+Result 1
+Document ID: doc_4
+Document: Natural language processing works with human language and text data.
+Cosine distance: 0.5064
+
+Result 2
+Document ID: doc_5
+Document: Computer vision allows machines to interpret images and videos.
+Cosine distance: 0.5135
+
+Result 3
+Document ID: doc_2
+Document: Machine learning enables computers to learn patterns from data.
+Cosine distance: 0.6026
+
