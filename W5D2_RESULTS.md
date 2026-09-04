@@ -22,3 +22,5 @@ The following models were downloaded:
 llama3.2:3b
 qwen2.5:3b
 ```
+
+W5D2 self-review: Code tested successfully with llama3.2:3b and qwen2.5:3b. Outputs were saved for evidence and model comparison.
