@@ -510,3 +510,143 @@ W4D1_RESULTS.md
 - [ ] CIA requirements completed
 - [ ] Minimum 2 commits completed
 - [ ] Final Git verification completed
+
+## W5D3 ChromaDB Vector Store and PDF RAG Self Review
+
+### Task Completion Checklist
+
+☑ Installed and verified ChromaDB.
+
+☑ Created a ChromaDB collection using cosine distance.
+
+☑ Added 20 AI/ML documents with embeddings.
+
+☑ Added metadata to the documents.
+
+☑ Implemented semantic similarity search.
+
+☑ Implemented metadata filtering.
+
+☑ Manually verified the similarity search results.
+
+☑ Created and processed an AI/ML sample PDF.
+
+☑ Extracted PDF text using pypdf.
+
+☑ Split the PDF into smaller chunks.
+
+☑ Stored PDF chunks in ChromaDB.
+
+☑ Retrieved the top 3 relevant chunks using similarity search.
+
+☑ Passed the retrieved context to Ollama.
+
+☑ Generated an answer using the llama3.2:3b model.
+
+☑ Saved output evidence in outputs/w5d3/.
+
+☑ Completed the required CIA Mentor Mode reviews.
+
+☑ Created at least two descriptive Git commits.
+
+☑ Pushed the completed work to the feature branch.
+
+### Validation Results
+
+ChromaDB collection was created successfully.
+
+20 documents were successfully stored with embeddings.
+
+Semantic similarity search returned relevant results.
+
+Metadata filtering worked successfully.
+
+The PDF was extracted successfully.
+
+4 PDF chunks were created and stored in ChromaDB.
+
+The top 3 relevant chunks were retrieved successfully.
+
+Retrieved context was successfully passed to Ollama.
+
+Ollama successfully generated an answer based on the retrieved context.
+
+All W5D3 scripts executed successfully without errors.
+
+### Code Quality
+
+☑ Code is organized into separate scripts for ChromaDB and PDF RAG functionality.
+
+☑ Meaningful variable and function names are used.
+
+☑ ChromaDB collections are handled correctly when the scripts are run again.
+
+☑ Output evidence is saved separately for verification.
+
+☑ The implementation was tested locally before committing.
+
+### Git Workflow
+
+☑ Work was completed on the branch feat/aiml W5 sahana.
+
+☑ Minimum two descriptive commits were created.
+
+☑ Changes were pushed to GitHub.
+
+☑ W5D3 commits are included in PR #10.
+
+### W5D3 Commits
+
+929622f feat: set up ChromaDB vector store and similarity search
+
+5c2733b feat: add PDF retrieval with ChromaDB and Ollama
+
+### Documentation and Evidence
+
+The following W5D3 evidence files were generated:
+
+outputs/w5d3/collection_output.txt
+
+outputs/w5d3/similarity_search.txt
+
+outputs/w5d3/metadata_filtering.txt
+
+outputs/w5d3/pdf_rag_results.txt
+
+### CIA Review
+
+☑ Completed the first CIA Mentor Mode interaction.
+
+☑ Completed the second CIA Mentor Mode interaction.
+
+☑ Reviewed the W5D3 implementation before committing.
+
+☑ Addressed the review requirements before pushing the changes.
+
+### AI Usage
+
+☑ Used Ollama for local LLM inference.
+
+☑ Used the llama3.2:3b model for the PDF RAG task.
+
+☑ Passed retrieved document chunks as context to the LLM.
+
+☑ Manually verified the generated answer against the retrieved context.
+
+### Viva Preparation
+
+1. What is cosine similarity and why is it used for semantic search?
+
+Cosine similarity measures the similarity between two vectors based on the angle between them. It is useful for semantic search because text embeddings with similar meanings tend to have similar vector directions.
+
+2. What is the difference between embeddings and one hot encoding?
+
+Embeddings are dense numerical vector representations that can capture semantic relationships between data. One hot encoding represents categories as binary vectors and does not capture semantic relationships.
+
+3. What are the trade offs between ChromaDB and FAISS?
+
+ChromaDB provides vector storage, collections, metadata filtering, and document management features. FAISS is a high performance similarity search library that is lightweight and optimized for vector search but provides fewer database style features.
+
+### Final Self Review
+
+W5D3 was completed successfully. The ChromaDB vector store, document embeddings, similarity search, metadata filtering, PDF retrieval, top 3 chunk retrieval, and Ollama based RAG pipeline were implemented and tested successfully. The required evidence was generated, CIA reviews were completed, the work was committed using descriptive Git commits, and the changes were pushed to GitHub.
