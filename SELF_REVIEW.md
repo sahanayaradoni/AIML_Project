@@ -672,3 +672,23 @@ Work maintained on the single Week 6 branch: feat/aiml-W6-sahana.
 Week 6 PR #11 created.
 
 Existing self-review content preserved.
+
+## W6D3: LangChain Tools & Agents — Self-Review
+
+LangChain chain implemented and tested with 5 inputs.
+
+Conversation memory verified across 5 turns.
+
+Two-tool LangChain agent implemented and tested with 3 tasks.
+
+Automated tests completed with 5 tests passed.
+
+Output evidence captured.
+
+Minimum 2 CIA interactions completed.
+
+Changes verified on the existing Week 6 implementation.
+
+Work maintained on the single Week 6 branch: feat/aiml-W6-sahana.
+
+Existing self-review content preserved.
