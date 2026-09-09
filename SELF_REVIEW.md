@@ -650,3 +650,25 @@ ChromaDB provides vector storage, collections, metadata filtering, and document 
 ### Final Self Review
 
 W5D3 was completed successfully. The ChromaDB vector store, document embeddings, similarity search, metadata filtering, PDF retrieval, top 3 chunk retrieval, and Ollama based RAG pipeline were implemented and tested successfully. The required evidence was generated, CIA reviews were completed, the work was committed using descriptive Git commits, and the changes were pushed to GitHub.
+
+## W6D2: LangChain Memory & Conversation History — Self-Review
+
+LangChain chain implemented and tested with 5 inputs.
+
+Conversation memory verified across 5 turns.
+
+Two-tool LangChain agent implemented and tested with 3 tasks.
+
+Automated tests completed.
+
+Output evidence captured.
+
+Minimum 2 CIA interactions completed.
+
+Changes committed and pushed.
+
+Work maintained on the single Week 6 branch: feat/aiml-W6-sahana.
+
+Week 6 PR #11 created.
+
+Existing self-review content preserved.
