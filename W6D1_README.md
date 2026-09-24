@@ -95,3 +95,81 @@ LangChain Memory allows an application to retain relevant information from previ
 ### 3. What is the ReAct pattern in LangChain agents?
 
 ReAct stands for Reasoning and Acting. An agent reasons about the user's request, decides which tool or action is needed, executes that action, observes the result, and then continues until it can provide a final answer.
+
+# W6D4: RAG Pipeline — LangChain + ChromaDB
+
+## Objective
+
+Implement a Retrieval-Augmented Generation (RAG) pipeline using ChromaDB, LangChain, Ollama embeddings, and the Ollama LLM.
+
+## Technologies Used
+
+- Python 3.13
+- ChromaDB
+- LangChain
+- LangChain Chroma
+- Ollama
+- nomic-embed-text
+- llama3.2:3b
+- pypdf
+- ReportLab
+
+## Practical Tasks Completed
+
+### 1. ChromaDB Vector Store
+
+- Created a persistent ChromaDB collection named `w6d4_documents`.
+- Configured cosine similarity.
+- Added 20 documents.
+- Generated embeddings using `nomic-embed-text`.
+
+### 2. Similarity Search
+
+- Performed semantic similarity search using cosine similarity.
+- Retrieved relevant documents based on query meaning.
+- Applied metadata filtering using document topics.
+- Manually verified the retrieval results.
+
+### 3. PDF RAG Pipeline
+
+- Created and processed a sample PDF.
+- Extracted PDF text using `pypdf`.
+- Split the PDF content into chunks.
+- Generated embeddings for the PDF chunks.
+- Stored the chunks in ChromaDB.
+- Retrieved the top 3 relevant chunks.
+- Passed the retrieved context to `llama3.2:3b`.
+- Generated the final RAG answer.
+
+## Embedding Model
+
+`nomic-embed-text` was used specifically for text embeddings.
+
+The LLM used for answer generation was:
+
+`llama3.2:3b`
+
+## RAG Flow
+
+```text
+Documents
+    ↓
+Text / PDF Extraction
+    ↓
+Document Chunks
+    ↓
+nomic-embed-text
+    ↓
+Vector Embeddings
+    ↓
+ChromaDB
+    ↓
+Cosine Similarity Search
+    ↓
+Top-3 Relevant Chunks
+    ↓
+Context
+    ↓
+llama3.2:3b
+    ↓
+Final Answer
