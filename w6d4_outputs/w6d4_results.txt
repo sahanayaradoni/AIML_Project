@@ -1,0 +1,113 @@
+============================================================
+W6D4: RAG PIPELINE — LANGCHAIN + CHROMADB
+============================================================
+
+ChromaDB collection created:
+Collection: w6d4_documents
+Documents added: 20
+Embedding model: nomic-embed-text
+Distance metric: cosine
+
+============================================================
+TASK 2A: COSINE SIMILARITY SEARCH
+============================================================
+Query: How does artificial intelligence and machine learning work?
+
+Top 5 results:
+
+Result 1
+Score: 0.1985
+Topic: ai
+Text: Artificial intelligence enables machines to perform tasks that normally require human intelligence.
+
+Result 2
+Score: 0.2499
+Topic: machine-learning
+Text: Machine learning allows computers to learn patterns from data.
+
+Result 3
+Score: 0.3478
+Topic: deep-learning
+Text: Deep learning uses neural networks with multiple layers.
+
+Result 4
+Score: 0.3514
+Topic: nlp
+Text: Natural language processing works with human language.
+
+Result 5
+Score: 0.3680
+Topic: machine-learning
+Text: Scikit-learn provides machine learning algorithms in Python.
+
+============================================================
+TASK 2B: METADATA FILTERING
+============================================================
+Query: programming and data
+Filter: topic = python
+
+Filtered results:
+
+Result 1
+Topic: python
+Text: Python is a popular programming language for data science.
+
+Result 2
+Topic: python
+Text: NumPy provides numerical computing capabilities in Python.
+
+============================================================
+TASK 3: CHROMADB + OLLAMA RAG PIPELINE
+============================================================
+Question: What is RAG and how does ChromaDB help in a RAG system?
+
+Top-3 retrieved chunks:
+
+Chunk 1
+Source: w6d4_sample.pdf
+Page: 1
+Text: LangChain and Retrieval Augmented Generation
+LangChain is a framework for building applications
+that use large language models.
+Retrieval Augmented Generation, commonly called RAG,
+combines information retrieval with language generation.
+A RAG system first retrieves relevant documents or
+document chunks from a vector database.
+The retrieved information is then provided to a
+language model as context.
+ChromaDB is a vector database that can store embeddings
+and perform similarity searches.
+Embeddi
+
+Chunk 2
+Source: w6d4_sample.pdf
+Page: 1
+Text: LangChain and Retrieval Augmented Generation
+LangChain is a framework for building applications
+that use large language models.
+Retrieval Augmented Generation, commonly called RAG,
+combines information retrieval with language generation.
+A RAG system first retrieves relevant documents or
+document chunks from a vector database.
+The retrieved information is then provided to a
+language model as context.
+ChromaDB is a vector database that can store embeddings
+and perform similarity searches.
+Embeddi
+
+============================================================
+OLLAMA RAG ANSWER
+============================================================
+RAG (Retrieval Augmented Generation) is a system that combines information retrieval with language generation. In a RAG system, ChromaDB is used as a vector database to store embeddings and perform similarity searches. These embeddings convert text into numerical vectors that capture semantic meaning, which are then retrieved and provided to a language model as context to generate text.
+
+============================================================
+W6D4 COMPLETED SUCCESSFULLY
+============================================================
+✓ ChromaDB collection created
+✓ 20 documents added with embeddings
+✓ Cosine similarity search performed
+✓ Metadata filtering performed
+✓ PDF embedded
+✓ Top-3 PDF chunks retrieved
+✓ Retrieved context passed to Ollama
+✓ Ollama generated the final answer

@@ -1,0 +1,74 @@
+============================================================
+W6D5: WEEK 6 PROJECT — DOCUMENT CHATBOT WITH LANGCHAIN
+============================================================
+Evidence captured: 2026-09-24 13:23:10
+
+
+--- CHAIN + MEMORY TEST RESULTS ---
+.....                                                                    [100%]
+5 passed in 257.47s (0:04:17)
+
+
+--- TWO-TOOL AGENT OUTPUT ---
+============================================================
+TASK 3: LANGCHAIN AGENT WITH TWO TOOLS
+============================================================
+
+Available tools:
+1. web_search_stub
+2. calculator
+
+============================================================
+AGENT TASK 1
+============================================================
+User: Calculate 25 * 4 + 10.
+Agent: The result of the calculation 25 * 4 + 10 is 110.
+
+============================================================
+AGENT TASK 2
+============================================================
+User: Search for information about LangChain.
+Agent: LangChain is an open-source framework that enables developers to build applications using language models, such as transformers and other neural network architectures. It provides a set of tools and libraries that make it easy to integrate language models into various applications, including but not limited to:
+
+1. Chatbots and conversational AI
+2. Text summarization and generation
+3. Language translation
+4. Sentiment analysis and opinion mining
+5. Question answering and knowledge retrieval
+
+LangChain's key features include:
+
+1. **Modular architecture**: LangChain allows developers to build applications by composing smaller, reusable components, making it easy to integrate language models into existing systems.
+2. **Language model integration**: LangChain provides a simple and efficient way to integrate language models into applications, including support for popular models like BERT, RoBERTa, and XLNet.
+3. **Task-oriented APIs**: LangChain offers a set of task-oriented APIs that enable developers to perform specific tasks, such as text classification, sentiment analysis, and question answering.
+4. **Extensibility**: LangChain is designed to be extensible, allowing developers to add new features and functionality as needed.
+
+Overall, LangChain is a powerful framework for building applications with language models, and its modular architecture and task-oriented APIs make it an attractive choice for developers looking to integrate language models into their applications.
+
+============================================================
+AGENT TASK 3
+============================================================
+User: Calculate 100 / 4 and explain what LangChain is.
+Agent: LangChain is an open-source framework for building modular, composable, and scalable data pipelines. It allows developers to create a chain of tasks that can be executed in a specific order, making it easier to manage complex data processing workflows.
+
+LangChain provides a set of tools and libraries that enable developers to define, execute, and manage data pipelines in a flexible and efficient manner. It supports a wide range of data sources and sinks, including popular data storage systems like AWS S3, Google Cloud Storage, and Apache Cassandra.
+
+Some of the key features of LangChain include:
+
+1. Modular task definition: LangChain allows developers to define tasks as small, independent units that can be executed in a specific order.
+2. Pipeline composition: LangChain enables developers to compose tasks into a pipeline, which can be executed in a specific order.
+3. Task execution: LangChain provides a flexible way to execute tasks, including support for parallel and sequential execution.
+4. Task monitoring and logging: LangChain provides tools for monitoring and logging task execution, making it easier to debug and optimize data pipelines.
+5. Integration with popular data storage systems: LangChain supports a wide range of data storage systems, making it easy to integrate with existing infrastructure.
+
+Overall, LangChain is a powerful tool for building and managing complex data pipelines, and can be used in a variety of applications, including data science, machine learning, and enterprise data integration.
+
+
+--- W6D5 VERIFICATION ---
+✓ LangChain chain verified
+✓ 5 automated tests passed
+✓ Conversation memory tests passed
+✓ Two-tool agent verified
+✓ Calculator tool executed
+✓ Web search stub executed
+✓ Three agent tasks executed

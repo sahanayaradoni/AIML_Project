@@ -1,0 +1,367 @@
+======================================================================
+W5D5 - LOCAL Q&A BOT USING OLLAMA
+======================================================================
+
+Custom System Prompt:
+
+You are a helpful AI/ML learning assistant.
+Give clear, concise, beginner-friendly answers.
+Explain technical concepts in simple language.
+Use examples when useful.
+
+
+
+======================================================================
+PART 1: FIVE PROMPT TEST
+======================================================================
+
+MODEL: llama3.2:3b
+----------------------------------------------------------------------
+
+Prompt 1: What is machine learning?
+
+Response:
+Machine learning (ML) is a type of artificial intelligence (AI) that enables computers to learn and improve from experience without being explicitly programmed.
+
+Think of it like this: Imagine you're trying to teach a child to recognize different types of animals. At first, you would show them a picture of a cat and say "this is a cat." Then, you would show them a picture of a dog and say "this is not a cat." The child would try to figure out the pattern and learn to recognize cats and dogs on their own.
+
+In machine learning, computers work in a similar way. They're given a large dataset of examples (like pictures of cats and dogs), and then they try to find patterns and relationships within that data. As they learn and improve, they can make predictions, classify objects, or even make decisions on their own.
+
+There are different types of machine learning, including:
+
+1. Supervised learning: The computer is shown examples of input-output pairs (like a picture of a cat with a label saying "cat").
+2. Unsupervised learning: The computer is shown a large dataset without labels, and it tries to find patterns and relationships on its own.
+3. Reinforcement learning: The computer is shown rewards or penalties for its actions, and it tries to learn to make decisions that maximize the rewards.
+
+Machine learning has many applications, such as:
+
+* Image recognition
+* Speech recognition
+* Natural language processing
+* Predictive analytics
+* Recommendation systems
+
+Overall, machine learning is a powerful tool that enables computers to learn and improve from experience, making it a fundamental aspect of modern AI.
+
+Response time: 63.42 seconds
+
+Prompt 2: What is the difference between AI and ML?
+
+Response:
+**AI (Artificial Intelligence) vs ML (Machine Learning)**
+
+Artificial Intelligence (AI) and Machine Learning (ML) are two closely related but distinct concepts in the field of computer science.
+
+**Artificial Intelligence (AI)**
+
+AI refers to the broader field of research and development aimed at creating machines that can perform tasks that typically require human intelligence, such as:
+
+* Reasoning and problem-solving
+* Learning and adaptation
+* Perception and understanding of data
+
+Think of AI as the overall goal of creating intelligent machines that can think and act like humans.
+
+**Machine Learning (ML)**
+
+Machine Learning is a subset of Artificial Intelligence that focuses specifically on developing algorithms and statistical models that enable machines to automatically improve their performance on a task, without being explicitly programmed.
+
+In other words, ML is a way to teach machines to learn from data, without being told exactly what to do.
+
+**Key differences:**
+
+* **AI** is the overall goal of creating intelligent machines, while **ML** is a specific approach to achieving that goal.
+* **AI** encompasses a wide range of techniques, including rule-based systems, expert systems, and more, while **ML** is a subset of those techniques that focuses on learning from data.
+
+To illustrate the difference, consider a self-driving car:
+
+* **AI** is the overall goal of creating a car that can drive itself.
+* **ML** is the specific approach used to teach the car to recognize and respond to traffic lights, pedestrians, and other obstacles, without being explicitly programmed.
+
+I hope this helps clarify the difference between AI and ML!
+
+Response time: 62.92 seconds
+
+Prompt 3: Explain overfitting in simple terms.
+
+Response:
+**Overfitting: A Simple Explanation**
+
+Overfitting is a common problem in machine learning and artificial intelligence. In simple terms, it means that a model is too good at fitting the training data, but doesn't generalize well to new, unseen data.
+
+**Think of it like a House**
+
+Imagine you're building a house to fit perfectly into a specific room. The model is like the house, and the training data is like the room. If the model is too complex, it can fit the room (training data) perfectly, but when you bring in new furniture (new data), it doesn't fit as well. That's overfitting!
+
+**What happens in Overfitting?**
+
+When a model overfits, it becomes too specialized to the training data and:
+
+1. **Looks too good on the training data**: The model seems to work well on the data it was trained on, but...
+2. **Fails on new data**: The model doesn't generalize well to new, unseen data, making it less accurate or even not working at all.
+
+**Why does Overfitting happen?**
+
+Overfitting can happen due to:
+
+1. **Too many parameters**: When a model has too many adjustable parameters, it can fit the training data too closely.
+2. **Not enough training data**: If the training data is too small, the model may overfit.
+3. **Complex model**: Models with many layers, nodes, or complexity may overfit.
+
+**How to prevent Overfitting?**
+
+To prevent overfitting, you can:
+
+1. **Use regularization techniques**: Such as L1 or L2 regularization, dropout, or early stopping to reduce model complexity.
+2. **Increase training data**: Collect more data to help the model learn from a broader range of examples.
+3. **Use simpler models**: Opt for simpler models that are less prone to overfitting.
+
+By understanding overfitting, you can take steps to prevent it and improve the accuracy of your machine learning models!
+
+Response time: 76.18 seconds
+
+Prompt 4: What is a vector database?
+
+Response:
+**What is a Vector Database?**
+
+A vector database is a type of database that stores and indexes vector data, such as dense vectors in a high-dimensional space. Vector data is used in various applications, including:
+
+1. **Natural Language Processing (NLP)**: Text analysis, sentiment analysis, and document similarity search.
+2. **Computer Vision**: Image and object recognition, object detection, and image similarity search.
+3. **Recommendation Systems**: User behavior analysis, item recommendation, and similarity search.
+
+**What makes vector databases special?**
+
+Traditional databases store data as text or numbers, but vector databases store data as numerical vectors. This allows for efficient querying and similarity search operations.
+
+**Key characteristics of vector databases:**
+
+1. **Vector storage**: Data is stored as dense vectors, which can be represented as a collection of numbers.
+2. **Indexing**: Vector databases use indexing techniques, such as Annoy (Approximate Nearest Neighbors Oh Yeah!) or Faiss (Facebook AI Similarity Search), to speed up similarity search queries.
+3. **Similarity search**: Vector databases allow for efficient similarity search operations, which can be used for tasks like finding similar documents or images.
+
+**Example Use Case:**
+
+Suppose you're building an e-commerce recommendation system. You have a large dataset of product features, such as text descriptions, image features, and user behavior data. A vector database can be used to index these features and speed up similarity search operations, enabling the system to recommend products based on user behavior and preferences.
+
+**Getting started with vector databases:**
+
+If you're interested in exploring vector databases, there are several libraries and frameworks available, such as:
+
+* Faiss (Python, C++, and Java)
+* Annoy (Python, C++, and Java)
+* Hnswlib (C++ and Python)
+* VectorDB (Python)
+
+These libraries provide efficient indexing and similarity search capabilities, making it easier to integrate vector databases into your applications.
+
+Response time: 76.92 seconds
+
+Prompt 5: What is semantic search?
+
+Response:
+**What is Semantic Search?**
+
+Semantic search is a search engine algorithm that understands the meaning behind your search query, rather than just the words you type.
+
+Traditional search engines like Google use keyword matching to find relevant results. For example, if you search for "flights from New York to LA", the search engine will show you results with the words "flights" and "New York" and "LA" in them.
+
+Semantic search, on the other hand, looks beyond the literal meaning of the words. It tries to understand the context, intent, and meaning behind your search query.
+
+**Example:**
+
+Let's say you search for "best restaurants in New York with great views".
+
+A traditional search engine might show you results with words like "restaurant", "New York", "great views", etc. But a semantic search engine would understand that you're looking for a restaurant in New York with a nice view, and show you results like:
+
+* "The Top of the Strand" (a restaurant with a great view of Central Park)
+* "The NoMad" (a restaurant with a beautiful view of the city)
+
+**How does it work?**
+
+Semantic search engines use natural language processing (NLP) and machine learning algorithms to analyze your search query and provide more relevant results. This can include:
+
+* Understanding synonyms and related words
+* Identifying entities (e.g., people, places, things)
+* Recognizing sentiment and emotional tone
+* Using contextual information (e.g., location, time)
+
+By using semantic search, search engines can provide more accurate and relevant results, making your search experience more effective and efficient.
+
+Response time: 60.07 seconds
+
+
+
+======================================================================
+PART 2: MODEL COMPARISON
+======================================================================
+
+
+======================================================================
+QUESTION 1: Explain RAG in simple terms.
+======================================================================
+
+MODEL: llama3.2:3b
+----------------------------------------------------------------------
+RAG stands for "Residual Activity Graph". I'll break it down in simple terms:
+
+**What is RAG?**
+RAG is a type of machine learning model that helps predict the remaining activity or effort required to complete a task. It's commonly used in situations where you want to estimate the amount of work left to do, like in project management, resource allocation, or capacity planning.
+
+**How does it work?**
+A RAG model learns patterns from historical data, such as past projects, tasks, or activities. It then uses this learned knowledge to predict the remaining activity required for a new project or task. The model takes into account factors like:
+
+1. Historical trends and patterns
+2. Task complexity and dependencies
+3. Available resources and capacity
+4. Time constraints and deadlines
+
+**Example**
+Imagine you're a project manager working on a construction project. You've completed 75% of the tasks, but there are still 25% left to do. You can use a RAG model to predict the remaining effort required to finish the project. The model will analyze historical data, such as:
+
+* Project completion rates
+* Task duration and complexity
+* Resource allocation and capacity
+* Time constraints and deadlines
+
+Using this information, the RAG model will provide you with a predicted percentage of completion, allowing you to plan and allocate resources more effectively.
+
+In summary, RAG is a machine learning model that helps estimate the remaining activity required to complete a task or project, using historical data and patterns to inform its predictions.
+
+Response time: 57.53 seconds
+
+MODEL: qwen2.5:3b
+----------------------------------------------------------------------
+RAG stands for Retrieval-Augmented Generation. Let's break it down:
+
+1. Retrieval: This means finding information that has already been stored or created. It's like searching for a book in a library.
+
+2. Augmented: This means adding something to something else. It's like adding a new color to your paint palette.
+
+3. Generation: This means creating something new, like writing a story.
+
+So, RAG is a method where a machine learning system uses pre-existing information (what it already knows) to help generate new information (create something new). 
+
+For example, imagine you're writing a story about a forest. Instead of just making it up from scratch, you might use what you've learned about forests from other stories and books. You might remember how forests are full of trees, have different kinds of plants, and sometimes have animals. You use this pre-existing knowledge to make your story more vivid and interesting.
+
+That's the basic idea of RAG - using existing knowledge to help create new content.
+
+Response time: 91.02 seconds
+
+
+======================================================================
+QUESTION 2: What is semantic search?
+======================================================================
+
+MODEL: llama3.2:3b
+----------------------------------------------------------------------
+**What is Semantic Search?**
+
+Semantic search is a search engine optimization (SEO) technique that helps search engines understand the context and meaning of your content, so they can return more accurate and relevant results for users.
+
+In traditional search engines, like Google, the algorithm looks at keywords and phrases used in your content to determine relevance. However, this approach can be misleading, as it doesn't always understand the context or meaning behind the words.
+
+**How does Semantic Search work?**
+
+Semantic search uses natural language processing (NLP) and machine learning algorithms to analyze the content and context of your web pages. Here's how it works:
+
+1. **Text Analysis**: The algorithm analyzes the text on your web page, including keywords, phrases, and content.
+2. **Entity Recognition**: It identifies specific entities, such as names, locations, and organizations, and their relationships with each other.
+3. **Intent Detection**: It determines the intent behind your content, such as informational, navigational, or transactional.
+4. **Contextual Understanding**: It takes into account the context in which the content is used, such as the surrounding text, images, and user behavior.
+
+**Example**
+
+Let's say you're writing a blog post about "best Italian restaurants in New York City." A semantic search algorithm would analyze the content to determine that:
+
+* "Italian restaurants" is a topic, not just a keyword.
+* "New York City" is a specific location, not just a city name.
+* The intent is to provide information about restaurants, not just to list a list of keywords.
+
+**Benefits**
+
+Semantic search can improve:
+
+* **Accuracy**: By understanding the context and meaning of your content, search engines can return more accurate results.
+* **Relevance**: Users are more likely to find what they're looking for, as search engines return content that matches their intent.
+* **User Experience**: Semantic search can improve the overall user experience by providing more relevant and helpful results.
+
+I hope this helps you understand semantic search!
+
+Response time: 79.68 seconds
+
+MODEL: qwen2.5:3b
+----------------------------------------------------------------------
+Semantic search is a type of search that aims to understand the meaning behind the words we use. It tries to find the most relevant answers to a search query, not just based on the exact words used, but also on the context and intent. Here's a simple way to think about it:
+
+Imagine you're looking for information about "best hiking trails in the mountains." A traditional search engine would look for websites that have the exact phrase "best hiking trails in the mountains" somewhere in their content. However, a semantic search engine would understand that you're looking for information about great hiking spots in mountain areas, even if the exact wording is slightly different.
+
+For example, a semantic search engine might consider searches for these terms as similar:
+- "Where are the best hiking trails in the mountains?"
+- "Where are the best places to go hiking in mountains?"
+- "What are some great hiking trails in mountain areas?"
+
+These searches all convey the same core intent, so a good semantic search engine would present similar results for each.
+
+Semantic search uses various techniques like natural language processing (NLP) and machine learning to comprehend the meaning behind words and phrases. It helps improve the relevance and usefulness of search results, making the search experience more intuitive and satisfying for users.
+
+Response time: 45.26 seconds
+
+
+======================================================================
+QUESTION 3: What is overfitting?
+======================================================================
+
+MODEL: llama3.2:3b
+----------------------------------------------------------------------
+Overfitting is a common problem in machine learning (ML) where a model is too closely fit to the training data, and doesn't generalize well to new, unseen data.
+
+Think of it like this: Imagine you're trying to draw a picture of a cat. If you spend too much time studying a single, weird cat picture, you might get really good at drawing that specific cat, but you'll struggle to draw a real cat.
+
+In machine learning, overfitting happens when a model is too complex and has learned the noise and patterns in the training data, rather than the underlying relationships. This means that the model will perform well on the training data, but poorly on new, unseen data.
+
+For example, consider a model that's trying to predict house prices based on features like number of bedrooms and square footage. If the model is too complex, it might fit the training data so closely that it becomes too dependent on the individual features, rather than understanding the underlying relationships between the features and the price. This would lead to poor performance on new data.
+
+Overfitting can be mitigated by using techniques like:
+
+* Regularization (e.g., L1 or L2 regularization)
+* Early stopping (stopping training when the model starts to overfit)
+* Data augmentation (increasing the size of the training data)
+* Cross-validation (testing the model on multiple subsets of the data)
+
+Does that make sense?
+
+Response time: 53.87 seconds
+
+MODEL: qwen2.5:3b
+----------------------------------------------------------------------
+Overfitting is a common problem in machine learning where a model learns the detail and noise in the training data to such an extent that it negatively impacts the performance of the model on new, unseen data.
+
+Imagine you're teaching a model to recognize cats. If the model learns not just the features of cats (like whiskers, eyes, and fur patterns), but also every little spot, texture, or shadow in the training images, it might start to recognize these details as essential for a cat, even if they're not actually important.
+
+When this happens, the model performs very well on the training data (like spotting cats in the images you've shown it), but when it encounters new images, it makes mistakes because it's focused too much on the specifics of the training images rather than the general features of cats.
+
+To put it simply, overfitting is when a model is too good at recognizing patterns in the training data, but it doesn't generalize well to new data. We want our models to be flexible enough to work in new situations, not just to remember the training data too well.
+
+Response time: 39.87 seconds
+
+
+
+======================================================================
+TEST SUMMARY
+======================================================================
+
+1. Ollama was successfully installed and configured.
+2. llama3.2:3b was used for five prompt tests.
+3. A custom system prompt was used.
+4. llama3.2:3b and qwen2.5:3b were compared
+   using the same three questions.
+5. Response quality, relevance and response time
+   were observed.
+6. Any timeout or incorrect response was recorded
+   instead of being hidden.
+
+======================================================================
+W5D5 TESTING COMPLETED
+======================================================================
