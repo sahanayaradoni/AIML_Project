@@ -1,0 +1,41 @@
+W5D3 — PDF + ChromaDB + Ollama RAG
+====================================
+
+PDF: sample_documents\aiml_sample.pdf
+Pages extracted: 2
+Chunks created: 4
+
+QUERY
+-----
+What is Retrieval-Augmented Generation and how does it work?
+
+TOP 3 RETRIEVED CHUNKS
+-----------------------
+
+Chunk 1
+Page: 2
+Chunk ID: pdf_chunk_4
+Cosine distance: 0.3894
+Text:
+Retrieval-Augmented Generation, or RAG, combines information retrieval with a language model. Relevant document chunks are retrieved from a vector database and provided as context to a language model. This allows the model to generate answers using information from the retrieved documents. 8. Ollama Ollama allows developers to run large language models locally. A local model can receive retrieved document context and generate an answer without requiring the document content to be sent to an external service.
+
+Chunk 2
+Page: 1
+Chunk ID: pdf_chunk_3
+Cosine distance: 0.3951
+Text:
+are based on the angle between them. It is commonly used in semantic search because vectors representing similar meanings tend to have similar directions. 7. Retrieval-Augmented Generation
+
+Chunk 3
+Page: 1
+Chunk ID: pdf_chunk_2
+Cosine distance: 0.6923
+Text:
+is commonly used for image recognition, speech recognition, natural language processing, and other complex tasks. 4. Embeddings An embedding is a numerical representation of data such as text. Similar meanings are represented by vectors that are close to each other in vector space. Embeddings are widely used for semantic search and retrieval-augmented generation. 5. Vector Databases A vector database stores numerical vector representations and allows efficient similarity search. ChromaDB is a vector database that can be used to store embeddings and retrieve documents that are semantically similar to a query. 6. Cosine Similarity Cosine similarity measures how similar two vectors
+
+OLLAMA ANSWER
+-------------
+
+According to the context, Retrieval-Augmented Generation (RAG) is a technique that combines information retrieval with a language model. Here's how it works:
+
+Relevant document chunks are retrieved from a vector database and provided as context to a language model. The model then uses this context to generate answers, utilizing information from the retrieved documents.
