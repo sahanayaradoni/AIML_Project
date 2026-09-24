@@ -808,3 +808,86 @@ Minimum 2 CIA interactions completed.
 Work maintained on the single Week 6 branch: feat/aiml-W6-sahana.
 
 Existing self-review content preserved.
+
+# W7D1: Haystack Pipeline Architecture — Self-Review
+
+## Completed Tasks
+
+- ✅ Installed and verified Haystack
+- ✅ Created and indexed 5 PDF documents
+- ✅ Implemented Haystack PDF conversion using `PyPDFToDocument`
+- ✅ Created an in-memory Haystack DocumentStore
+- ✅ Implemented BM25 retrieval
+- ✅ Ran 10 evaluation questions using BM25
+- ✅ Manually evaluated BM25 retrieval quality
+- ✅ Implemented dense retrieval using Sentence Transformers
+- ✅ Used `sentence-transformers/all-MiniLM-L6-v2`
+- ✅ Ran the same 10 questions using dense retrieval
+- ✅ Compared BM25 and dense retrieval results
+- ✅ Generated BM25 and dense retrieval output evidence
+- ✅ Documented retrieval evaluation and comparison
+- ✅ Created automated pytest tests
+- ✅ All 5 W7D1 pytest tests passed
+
+## Retrieval Results
+
+- ✅ BM25 top-1 retrieval: 9/10 (90%)
+- ✅ Dense retrieval top-1 retrieval: 10/10 (100%)
+- ✅ Same 10 questions used for both retrieval approaches
+- ✅ BM25 and dense retrieval comparison documented
+
+## Code Quality
+
+- ✅ Used reusable functions for document loading and retrieval
+- ✅ Added docstrings to implementation functions
+- ✅ Used `pathlib` for file handling
+- ✅ Kept BM25 and dense retrieval implementations in separate scripts
+- ✅ Added automated validation using pytest
+
+## Output Evidence
+
+- ✅ Generated 5 PDF documents
+- ✅ Saved BM25 retrieval output in `w7d1_bm25_output.txt`
+- ✅ Saved dense retrieval output in `w7d1_dense_output.txt`
+- ✅ Created `W7D1_BM25_EVALUATION.md`
+- ✅ Created `W7D1_DENSE_EVALUATION.md`
+- ✅ Created `W7D1_RETRIEVAL_COMPARISON.md`
+
+## Testing
+
+- ✅ Created `test_w7d1_haystack.py`
+- ✅ Verified 5 PDF documents are available
+- ✅ Verified PDF conversion produces 5 Haystack Documents
+- ✅ Verified BM25 DocumentStore indexes 5 documents
+- ✅ Verified dense DocumentStore indexes 5 documents
+- ✅ Verified dense embedding model configuration
+- ✅ Result: 5 tests passed
+
+## CIA Review
+
+- ✅ Completed CIA Full Stack Mentor Mode Interaction #1
+- ✅ Completed CIA Full Stack Mentor Mode Interaction #2
+- ✅ Reviewed the implementation before committing
+
+## Git Workflow
+
+- ✅ Created feature branch `feat/aiml-W7-sahana`
+- ✅ Completed minimum 2 descriptive commits
+- ✅ Commit 1: `619bc36 feat: add Haystack BM25 and dense retrieval pipelines`
+- ✅ Commit 2: `629caa6 test: add W7D1 retrieval evaluation and tests`
+- ✅ Pushed changes to GitHub
+- ✅ Raised Pull Request #12
+- ✅ Verified the PR has no merge conflicts
+- ✅ Maintained the existing weekly branch workflow
+
+## Self-Review Status
+
+- ✅ W7D1 practical tasks completed
+- ✅ Retrieval evaluation completed
+- ✅ Dense retrieval comparison completed
+- ✅ Automated tests passed
+- ✅ Output evidence completed
+- ✅ CIA requirements completed
+- ✅ Git requirements completed
+- ✅ Pull Request created
+- ✅ Existing `SELF_REVIEW.md` content preserved
