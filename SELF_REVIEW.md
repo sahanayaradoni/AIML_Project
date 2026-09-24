@@ -692,3 +692,37 @@ Changes verified on the existing Week 6 implementation.
 Work maintained on the single Week 6 branch: feat/aiml-W6-sahana.
 
 Existing self-review content preserved.
+
+## W6D4: RAG Pipeline — LangChain + ChromaDB — Self-Review
+
+ChromaDB vector store created successfully.
+
+20 documents added with embeddings using nomic-embed-text.
+
+Cosine similarity search implemented and verified.
+
+Metadata filtering implemented and verified.
+
+PDF embedded and stored in ChromaDB.
+
+Top-3 PDF chunks retrieved successfully.
+
+Retrieved context passed to llama3.2:3b.
+
+Ollama generated the final RAG answer successfully.
+
+Automated W6D4 evidence generated.
+
+Working code committed and pushed.
+
+Two descriptive W6D4 commits completed.
+
+Full Stack Mentor Mode code review completed.
+
+Minimum 2 CIA interactions completed.
+
+W6D4 documentation appended to the existing W6D1 README.
+
+Work maintained on the single Week 6 branch: feat/aiml-W6-sahana.
+
+Existing self-review content preserved.
