@@ -726,3 +726,85 @@ W6D4 documentation appended to the existing W6D1 README.
 Work maintained on the single Week 6 branch: feat/aiml-W6-sahana.
 
 Existing self-review content preserved.
+
+# W6D5: Week 6 Project — Document Chatbot with LangChain
+
+## Objective
+
+Complete the Week 6 LangChain project by verifying a LangChain chain, conversation memory, and a two-tool agent using Ollama.
+
+## Components
+
+- PromptTemplate
+- Ollama LLM
+- StrOutputParser
+- Conversation memory
+- `web_search_stub` tool
+- `calculator` tool
+- LangChain agent
+- Ollama `llama3.2:3b`
+
+## Verification
+
+The existing LangChain chain and memory implementation was tested successfully.
+
+- 5 automated tests passed.
+- Conversation memory tests passed.
+- Two-tool agent executed successfully.
+- Calculator tool executed successfully.
+- Web search stub executed successfully.
+- Three agent tasks were completed.
+
+## Output Evidence
+
+Evidence was captured in:
+
+`w6d5_outputs/w6d5_results.txt`
+
+The evidence contains the automated test results and the complete three-task agent output.
+
+## Viva Preparation
+
+### 1. What is a LangChain chain?
+
+A LangChain chain connects multiple components into a defined workflow, such as a prompt template, language model, and output parser. A single LLM call directly sends a prompt to the model, while a chain can combine multiple processing steps.
+
+### 2. What problem does LangChain Memory solve?
+
+Memory allows an application to retain previous conversation information so that later interactions can use earlier context instead of treating every input as completely independent.
+
+### 3. What is the ReAct pattern in LangChain agents?
+
+ReAct combines reasoning with actions. An agent decides what action or tool to use, executes it, observes the result, and then continues toward the final answer.
+
+## Result
+
+W6D5 chain, conversation memory, and two-tool agent requirements were successfully verified using the existing Week 6 implementation.
+
+## W6D5: Document Chatbot with LangChain — Self-Review
+
+LangChain chain verified successfully.
+
+5 automated tests passed.
+
+Conversation memory verified across multiple tests.
+
+Two-tool agent implemented and verified.
+
+Calculator tool executed successfully.
+
+Web search stub executed successfully.
+
+Three agent tasks executed successfully.
+
+Output evidence captured in `w6d5_outputs/w6d5_results.txt`.
+
+Existing Week 6 implementation reused without unnecessary duplication.
+
+CIA Full Stack Mentor Mode code review completed.
+
+Minimum 2 CIA interactions completed.
+
+Work maintained on the single Week 6 branch: feat/aiml-W6-sahana.
+
+Existing self-review content preserved.
