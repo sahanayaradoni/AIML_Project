@@ -891,3 +891,43 @@ Existing self-review content preserved.
 - ✅ Git requirements completed
 - ✅ Pull Request created
 - ✅ Existing `SELF_REVIEW.md` content preserved
+
+# W7D2: Haystack Retrieval — BM25 & Dense Retrieval — Self-Review
+
+## Completed Tasks
+
+- Created the W7D2 Haystack retrieval pipeline.
+- Indexed 5 PDF documents.
+- Evaluated 10 questions using BM25 retrieval.
+- Implemented dense retrieval using Sentence Transformers.
+- Evaluated the same 10 questions using dense retrieval.
+- Compared BM25 and dense retrieval results.
+- Saved BM25 and dense retrieval output evidence.
+- Created retrieval evaluation and comparison reports.
+- Created automated pytest tests.
+- Verified all 7 W7D2 tests passed.
+
+## Retrieval Results
+
+- BM25 top-1 retrieval: 9/10 (90%).
+- Dense top-1 retrieval: 10/10 (100%).
+
+## Git Workflow
+
+- Commit `2eed66a` created and pushed.
+- Complete the second descriptive W7D2 commit.
+- Verify pull request requirements.
+
+## CIA Review
+
+- Complete W7D2 CIA Full Stack Mentor Mode interaction #1.
+- Complete W7D2 CIA Full Stack Mentor Mode interaction #2.
+
+## Self-Review Status
+
+- Retrieval implementation and comparison completed.
+- Automated tests passed.
+- Output evidence created.
+- CIA review requirements completed.
+- Second W7D2 commit completed.
+- Pull request requirements verified.
