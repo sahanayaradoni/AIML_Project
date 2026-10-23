@@ -1,0 +1,54 @@
+PDF files found: 5
+Documents indexed: 5
+
+W7D2 BM25 Retrieval Results:
+
+Question 1: What is machine learning?
+  1. deep_learning.pdf (score=3.0430)
+  2. machine_learning.pdf (score=1.8353)
+  3. nlp.pdf (score=1.7325)
+
+Question 2: What is supervised learning?
+  1. machine_learning.pdf (score=3.5830)
+  2. deep_learning.pdf (score=3.5528)
+  3. nlp.pdf (score=2.1659)
+
+Question 3: What is deep learning?
+  1. deep_learning.pdf (score=4.2086)
+  2. nlp.pdf (score=2.3502)
+  3. machine_learning.pdf (score=1.9248)
+
+Question 4: What is a neural network?
+  1. deep_learning.pdf (score=6.0185)
+  2. computer_vision.pdf (score=2.5993)
+  3. machine_learning.pdf (score=2.5993)
+
+Question 5: What is natural language processing?
+  1. nlp.pdf (score=5.7546)
+  2. deep_learning.pdf (score=5.1870)
+  3. computer_vision.pdf (score=2.8272)
+
+Question 6: What are common NLP tasks?
+  1. nlp.pdf (score=4.2076)
+  2. computer_vision.pdf (score=3.6683)
+  3. machine_learning.pdf (score=2.7872)
+
+Question 7: What is computer vision?
+  1. computer_vision.pdf (score=5.7662)
+  2. deep_learning.pdf (score=3.8828)
+  3. machine_learning.pdf (score=2.5993)
+
+Question 8: What is object detection?
+  1. computer_vision.pdf (score=5.2486)
+  2. deep_learning.pdf (score=3.8828)
+  3. machine_learning.pdf (score=2.5993)
+
+Question 9: What is MLOps?
+  1. mlops.pdf (score=3.3299)
+  2. deep_learning.pdf (score=3.0164)
+  3. computer_vision.pdf (score=1.7329)
+
+Question 10: What is model monitoring?
+  1. mlops.pdf (score=5.5353)
+  2. deep_learning.pdf (score=3.8828)
+  3. computer_vision.pdf (score=2.5993)

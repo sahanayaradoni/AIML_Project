@@ -1,0 +1,8 @@
+W5D4 - CHROMADB COLLECTION INFORMATION
+============================================================
+
+Collection name: w5d4_documents
+Number of documents: 20
+Distance metric: cosine
+Database type: ChromaDB
+Persistent database path: ./w5d4_chroma_db

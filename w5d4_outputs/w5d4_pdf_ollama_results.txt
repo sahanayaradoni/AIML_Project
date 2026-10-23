@@ -1,0 +1,66 @@
+======================================================================
+W5D4 - PDF SEMANTIC SEARCH + OLLAMA RESULTS
+======================================================================
+
+PDF: sample_documents/aiml_sample.pdf
+Pages: 2
+Chunks: 6
+ChromaDB documents: 6
+Ollama model: llama3.2:3b
+
+QUERY
+----------------------------------------------------------------------
+What is Retrieval-Augmented Generation and how does it work?
+
+TOP-3 RETRIEVED CHUNKS
+----------------------------------------------------------------------
+
+Rank 1
+ID: w5d4_pdf_chunk_3
+Chunk number: 4
+Cosine distance: 0.4310
+Text:
+used to store embeddings and retrieve documents that
+are semantically similar to a query.
+6. Cosine Similarity
+Cosine similarity measures how similar two vectors are based on the angle between them. It is
+commonly used in semantic search because vectors representing similar meanings tend to have
+similar directions.
+7. Retrieval-Augmented Generation
+
+Retrieval-Augmented Generation, or RAG, combines information retrieval with a language model.
+Relevant document chunks are retrieved from a vector
+
+Rank 2
+ID: w5d4_pdf_chunk_4
+Chunk number: 5
+Cosine distance: 0.5841
+Text:
+s information retrieval with a language model.
+Relevant document chunks are retrieved from a vector database and provided as context to a
+language model. This allows the model to generate answers using information from the retrieved
+documents.
+8. Ollama
+Ollama allows developers to run large language models locally. A local model can receive retrieved
+document context and generate an answer without requiring the document content to be sent to an
+external service.
+
+Rank 3
+ID: w5d4_pdf_chunk_2
+Chunk number: 3
+Cosine distance: 0.6607
+Text:
+gs
+An embedding is a numerical representation of data such as text. Similar meanings are represented
+by vectors that are close to each other in vector space. Embeddings are widely used for semantic
+search and retrieval-augmented generation.
+5. Vector Databases
+A vector database stores numerical vector representations and allows efficient similarity search.
+ChromaDB is a vector database that can be used to store embeddings and retrieve documents that
+are semantically similar to a query.
+6. Cosine
+
+
+OLLAMA ANSWER
+----------------------------------------------------------------------
+Retrieval-Augmented Generation (RAG) is a method that combines information retrieval with a language model. Relevant document chunks are retrieved from a vector database and provided as context to a language model. This allows the model to generate answers using information from the retrieved documents.

@@ -1,0 +1,37 @@
+============================================================
+W5D4 - CHROMADB SEMANTIC SEARCH RESULTS
+============================================================
+
+Similarity Search
+------------------------------------------------------------
+Query: How can computers understand the meaning of human language?
+
+Rank 1
+ID: w5d4_doc_4
+Document: Natural language processing helps computers understand human language.
+Topic: nlp
+Cosine distance: 0.2988
+
+Rank 2
+ID: w5d4_doc_5
+Document: Computer vision enables machines to understand images and videos.
+Topic: computer_vision
+Cosine distance: 0.5139
+
+Rank 3
+ID: w5d4_doc_16
+Document: Large language models can generate and understand natural language.
+Topic: llm
+Cosine distance: 0.5374
+
+
+Metadata Filtering
+------------------------------------------------------------
+Query: machine learning
+Filter: topic = "machine_learning"
+
+Rank 1
+ID: w5d4_doc_2
+Document: Machine learning allows computers to learn patterns from data.
+Cosine distance: 0.3664
+

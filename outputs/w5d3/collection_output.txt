@@ -1,0 +1,7 @@
+W5D3 — ChromaDB Collection Setup
+================================
+
+Collection name: w5d3_documents
+Distance metric: cosine
+Number of documents: 20
+Embedding generation: ChromaDB

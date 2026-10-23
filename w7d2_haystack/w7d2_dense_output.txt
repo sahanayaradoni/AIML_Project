@@ -1,0 +1,66 @@
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 555.36it/s]
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.34it/s]
+PDF files found: 5
+Documents indexed: 5
+
+W7D2 Dense Retrieval Results:
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 35.68it/s]
+
+Question 1: What is machine learning?
+  1. machine_learning.pdf (score=0.7271)
+  2. deep_learning.pdf (score=0.5180)
+  3. nlp.pdf (score=0.4410)
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 19.25it/s]
+
+Question 2: What is supervised learning?
+  1. machine_learning.pdf (score=0.6437)
+  2. deep_learning.pdf (score=0.3927)
+  3. computer_vision.pdf (score=0.3926)
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 18.44it/s]
+
+Question 3: What is deep learning?
+  1. deep_learning.pdf (score=0.8462)
+  2. machine_learning.pdf (score=0.4284)
+  3. nlp.pdf (score=0.4191)
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 20.70it/s]
+
+Question 4: What is a neural network?
+  1. deep_learning.pdf (score=0.6017)
+  2. machine_learning.pdf (score=0.3113)
+  3. nlp.pdf (score=0.2845)
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 17.29it/s]
+
+Question 5: What is natural language processing?
+  1. nlp.pdf (score=0.7485)
+  2. machine_learning.pdf (score=0.3350)
+  3. computer_vision.pdf (score=0.3179)
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 17.42it/s]
+
+Question 6: What are common NLP tasks?
+  1. nlp.pdf (score=0.6487)
+  2. machine_learning.pdf (score=0.2714)
+  3. computer_vision.pdf (score=0.1817)
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 21.25it/s]
+
+Question 7: What is computer vision?
+  1. computer_vision.pdf (score=0.6983)
+  2. machine_learning.pdf (score=0.3959)
+  3. deep_learning.pdf (score=0.3861)
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 17.73it/s]
+
+Question 8: What is object detection?
+  1. computer_vision.pdf (score=0.7132)
+  2. machine_learning.pdf (score=0.3852)
+  3. deep_learning.pdf (score=0.3416)
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 16.81it/s]
+
+Question 9: What is MLOps?
+  1. mlops.pdf (score=0.6397)
+  2. machine_learning.pdf (score=0.2474)
+  3. deep_learning.pdf (score=0.1759)
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 33.54it/s]
+
+Question 10: What is model monitoring?
+  1. mlops.pdf (score=0.5504)
+  2. machine_learning.pdf (score=0.2742)
+  3. computer_vision.pdf (score=0.2557)
