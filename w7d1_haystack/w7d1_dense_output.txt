@@ -1,0 +1,67 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 1377.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00,  1.70it/s]Batches: 100%|##########| 1/1 [00:00<00:00,  1.70it/s]
+PDF files found: 5
+Documents indexed: 5
+
+Dense Retrieval Results:
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00, 36.39it/s]
+
+Question 1: What is machine learning?
+  1. machine_learning.pdf (score=0.7481)
+  2. mlops.pdf (score=0.4729)
+  3. deep_learning.pdf (score=0.4523)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00, 38.84it/s]
+
+Question 2: What is supervised learning?
+  1. machine_learning.pdf (score=0.6244)
+  2. deep_learning.pdf (score=0.4076)
+  3. computer_vision.pdf (score=0.3988)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00, 42.31it/s]
+
+Question 3: What is deep learning?
+  1. deep_learning.pdf (score=0.7424)
+  2. machine_learning.pdf (score=0.4916)
+  3. computer_vision.pdf (score=0.4541)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00, 32.09it/s]
+
+Question 4: What is a neural network?
+  1. deep_learning.pdf (score=0.6119)
+  2. machine_learning.pdf (score=0.3667)
+  3. computer_vision.pdf (score=0.3576)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00, 40.70it/s]
+
+Question 5: What is natural language processing?
+  1. nlp.pdf (score=0.7472)
+  2. machine_learning.pdf (score=0.3266)
+  3. deep_learning.pdf (score=0.3131)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00, 34.53it/s]
+
+Question 6: What are common NLP tasks?
+  1. nlp.pdf (score=0.6606)
+  2. machine_learning.pdf (score=0.2410)
+  3. deep_learning.pdf (score=0.2408)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00, 36.38it/s]
+
+Question 7: What is computer vision?
+  1. computer_vision.pdf (score=0.6282)
+  2. machine_learning.pdf (score=0.3867)
+  3. deep_learning.pdf (score=0.3128)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00, 35.35it/s]
+
+Question 8: What is object detection?
+  1. computer_vision.pdf (score=0.5626)
+  2. machine_learning.pdf (score=0.3918)
+  3. deep_learning.pdf (score=0.3054)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00, 38.56it/s]
+
+Question 9: What is MLOps?
+  1. mlops.pdf (score=0.6686)
+  2. machine_learning.pdf (score=0.2647)
+  3. deep_learning.pdf (score=0.1681)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|##########| 1/1 [00:00<00:00, 43.46it/s]
+
+Question 10: What is model monitoring?
+  1. mlops.pdf (score=0.4236)
+  2. machine_learning.pdf (score=0.2712)
+  3. computer_vision.pdf (score=0.1970)

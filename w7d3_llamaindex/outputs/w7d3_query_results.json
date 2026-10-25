@@ -1,0 +1,286 @@
+{
+  "embedding_model": "nomic-embed-text",
+  "llm_model": "llama3.2:3b",
+  "context_window": 2048,
+  "document_count": 5,
+  "questions_per_index": 10,
+  "in_memory": {
+    "index_name": "In-memory LlamaIndex",
+    "query_count": 10,
+    "average_latency_seconds": 23.948,
+    "results": [
+      {
+        "question_number": 1,
+        "question": "What is machine learning?",
+        "answer": "Machine learning is a branch of artificial intelligence that enables computers to learn patterns from data and make predictions or decisions without being explicitly programmed for every task.",
+        "expected_fact": "learn patterns from data",
+        "source_files": [
+          "machine_learning.txt",
+          "supervised_learning.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 76.145
+      },
+      {
+        "question_number": 2,
+        "question": "What are the three common types of machine learning?",
+        "answer": "There are three common types of machine learning: supervised learning, unsupervised learning, and reinforcement learning.",
+        "expected_fact": "supervised learning",
+        "source_files": [
+          "machine_learning.txt",
+          "supervised_learning.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 8.036
+      },
+      {
+        "question_number": 3,
+        "question": "How do classification and regression differ?",
+        "answer": "Classification and regression are two distinct approaches in supervised learning. Classification predicts discrete categories, whereas regression predicts continuous numerical values. This fundamental difference in the type of output makes classification and regression suitable for different types of problems.",
+        "expected_fact": "continuous numerical values",
+        "source_files": [
+          "machine_learning.txt",
+          "supervised_learning.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 27.38
+      },
+      {
+        "question_number": 4,
+        "question": "What is unsupervised learning used for?",
+        "answer": "Unsupervised learning is used to discover hidden patterns or groups in unlabeled data.",
+        "expected_fact": "hidden patterns",
+        "source_files": [
+          "machine_learning.txt",
+          "supervised_learning.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 8.192
+      },
+      {
+        "question_number": 5,
+        "question": "What is an embedding?",
+        "answer": "An embedding is a numerical vector representation of text that captures aspects of its semantic meaning, allowing texts with similar meanings to have similar embedding vectors.",
+        "expected_fact": "numerical vector representation",
+        "source_files": [
+          "rag_and_embeddings.txt",
+          "vector_databases.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 27.24
+      },
+      {
+        "question_number": 6,
+        "question": "What does retrieval-augmented generation do?",
+        "answer": "Retrieval-Augmented Generation combines document retrieval with large language model generation. It retrieves relevant information from a supplied knowledge base and uses the retrieved context to generate an answer.",
+        "expected_fact": "retrieves relevant information",
+        "source_files": [
+          "rag_and_embeddings.txt",
+          "vector_databases.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 10.215
+      },
+      {
+        "question_number": 7,
+        "question": "What is the role of LlamaIndex?",
+        "answer": "LlamaIndex is a framework that helps developers connect data sources to large language models, providing document readers, indexes, retrievers, and query engines.",
+        "expected_fact": "connect data sources",
+        "source_files": [
+          "rag_and_embeddings.txt",
+          "vector_databases.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 27.22
+      },
+      {
+        "question_number": 8,
+        "question": "What is ChromaDB used for?",
+        "answer": "ChromaDB is used for storing and retrieving numerical vector embeddings, helping applications find information that is semantically similar to a query.",
+        "expected_fact": "vector database",
+        "source_files": [
+          "machine_learning.txt",
+          "vector_databases.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 15.09
+      },
+      {
+        "question_number": 9,
+        "question": "What is overfitting?",
+        "answer": "It occurs when a model learns the training data too closely and performs poorly on new examples.",
+        "expected_fact": "training data",
+        "source_files": [
+          "rag_and_embeddings.txt",
+          "supervised_learning.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 16.31
+      },
+      {
+        "question_number": 10,
+        "question": "What is MLOps?",
+        "answer": "MLOps is a combination of machine learning, software engineering, and operations practices that manage the lifecycle of machine learning models.",
+        "expected_fact": "lifecycle of machine learning models",
+        "source_files": [
+          "machine_learning.txt",
+          "mlops.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 23.654
+      }
+    ]
+  },
+  "chroma": {
+    "index_name": "LlamaIndex + ChromaDB",
+    "query_count": 10,
+    "average_latency_seconds": 12.067,
+    "results": [
+      {
+        "question_number": 1,
+        "question": "What is machine learning?",
+        "answer": "Machine learning is a branch of artificial intelligence that enables computers to learn patterns from data and make predictions or decisions without being explicitly programmed for every task.",
+        "expected_fact": "learn patterns from data",
+        "source_files": [
+          "machine_learning.txt",
+          "supervised_learning.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 9.138
+      },
+      {
+        "question_number": 2,
+        "question": "What are the three common types of machine learning?",
+        "answer": "There are three common types of machine learning: supervised learning, unsupervised learning, and reinforcement learning.",
+        "expected_fact": "supervised learning",
+        "source_files": [
+          "machine_learning.txt",
+          "supervised_learning.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 7.675
+      },
+      {
+        "question_number": 3,
+        "question": "How do classification and regression differ?",
+        "answer": "Classification and regression are two distinct approaches in supervised learning. Classification predicts discrete categories, whereas regression predicts continuous numerical values. This fundamental difference in prediction outcomes is the primary distinction between the two.",
+        "expected_fact": "continuous numerical values",
+        "source_files": [
+          "machine_learning.txt",
+          "supervised_learning.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 17.632
+      },
+      {
+        "question_number": 4,
+        "question": "What is unsupervised learning used for?",
+        "answer": "Unsupervised learning is used to discover hidden patterns or groups in unlabeled data.",
+        "expected_fact": "hidden patterns",
+        "source_files": [
+          "machine_learning.txt",
+          "supervised_learning.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 6.782
+      },
+      {
+        "question_number": 5,
+        "question": "What is an embedding?",
+        "answer": "An embedding is a numerical vector representation of text that captures aspects of its semantic meaning, allowing texts with similar meanings to have similar embedding vectors.",
+        "expected_fact": "numerical vector representation",
+        "source_files": [
+          "rag_and_embeddings.txt",
+          "vector_databases.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 7.175
+      },
+      {
+        "question_number": 6,
+        "question": "What does retrieval-augmented generation do?",
+        "answer": "Retrieval-Augmented Generation combines document retrieval with large language model generation. It retrieves relevant information from a supplied knowledge base and uses the retrieved context to generate an answer.",
+        "expected_fact": "retrieves relevant information",
+        "source_files": [
+          "rag_and_embeddings.txt",
+          "vector_databases.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 10.438
+      },
+      {
+        "question_number": 7,
+        "question": "What is the role of LlamaIndex?",
+        "answer": "LlamaIndex is a framework that helps developers connect data sources to large language models, providing document readers, indexes, retrievers, and query engines to support Retrieval-Augmented Generation (RAG) workflows.",
+        "expected_fact": "connect data sources",
+        "source_files": [
+          "rag_and_embeddings.txt",
+          "vector_databases.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 21.171
+      },
+      {
+        "question_number": 8,
+        "question": "What is ChromaDB used for?",
+        "answer": "ChromaDB is used for storing and retrieving numerical vector embeddings, helping applications find information that is semantically similar to a query.",
+        "expected_fact": "vector database",
+        "source_files": [
+          "machine_learning.txt",
+          "vector_databases.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 15.992
+      },
+      {
+        "question_number": 9,
+        "question": "What is overfitting?",
+        "answer": "It occurs when a model learns the training data too closely and performs poorly on new examples.",
+        "expected_fact": "training data",
+        "source_files": [
+          "rag_and_embeddings.txt",
+          "supervised_learning.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 16.42
+      },
+      {
+        "question_number": 10,
+        "question": "What is MLOps?",
+        "answer": "MLOps is a combination of machine learning, software engineering, and operations practices that manage the lifecycle of machine learning models.",
+        "expected_fact": "lifecycle of machine learning models",
+        "source_files": [
+          "machine_learning.txt",
+          "mlops.txt"
+        ],
+        "sources_returned": true,
+        "expected_fact_in_retrieved_context": true,
+        "latency_seconds": 8.252
+      }
+    ]
+  },
+  "latency_comparison_seconds": {
+    "in_memory": 23.948,
+    "chroma": 12.067
+  },
+  "latency_note": "Latency includes retrieval and LLM generation. Model warm-up and local system load can affect the measurements."
+}

@@ -1,0 +1,15 @@
+# MLOps and Model Evaluation
+
+MLOps combines machine learning, software engineering, and operations practices to manage the lifecycle of machine learning models.
+
+The machine learning lifecycle includes data preparation, model development, training, evaluation, deployment, monitoring, and retraining.
+
+Model evaluation measures how well a model performs on data that was not used for training. Common classification metrics include accuracy, precision, recall, and F1-score. Regression metrics include mean absolute error and root mean squared error.
+
+Experiment tracking records parameters, metrics, datasets, and model artifacts so that experiments can be compared and reproduced. MLflow is a tool used for experiment tracking and model lifecycle management.
+
+Monitoring a deployed model can reveal data drift, changes in input distributions, latency problems, and declining prediction quality.
+
+Reliable MLOps practices include version control, automated testing, reproducible environments, continuous integration, and documented deployment procedures.
+
+For a retrieval-augmented generation system, evaluation should consider retrieval relevance, answer correctness, response latency, and whether answers are supported by retrieved documents.
