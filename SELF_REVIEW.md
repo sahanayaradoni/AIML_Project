@@ -977,3 +977,20 @@ Existing self-review content preserved.
 - Query result evidence saved.
 - CIA review requirements completed.
 - Git commits, push, and pull request requirements completed.
+
+## W7D4 — Ollama Local LLM Inference
+
+- [x] Installed and verified Ollama with local LLM models.
+- [x] Implemented local inference using the Ollama chat API.
+- [x] Added a custom system prompt for beginner-friendly AI/ML answers.
+- [x] Tested five prompts using `llama3.2:3b`.
+- [x] Compared `llama3.2:3b` and `qwen2.5:3b` using three identical questions.
+- [x] Documented model comparison observations in `w7d4_ollama/W7D4_MODEL_COMPARISON.md`.
+- [x] Saved actual model responses in `w7d4_ollama/W7D4_OUTPUT_EVIDENCE.txt`.
+- [x] Added automated tests; all 3 tests passed.
+- [x] Completed two CIA Full Stack Mentor Mode reviews.
+- [x] Committed the W7D4 implementation as `19a7a00`.
+
+**Learning:** Local LLMs can run through Ollama's API. Different models may vary in response length and their interpretation of ambiguous prompts.
+
+**Improvement:** Provide clearer context in prompts and expand model evaluation with more questions and objective quality measures.
