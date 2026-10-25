@@ -931,3 +931,49 @@ Existing self-review content preserved.
 - CIA review requirements completed.
 - Second W7D2 commit completed.
 - Pull request requirements verified.
+
+# W7D3 — LlamaIndex Document Indexing and RAG
+
+## Implementation Checklist
+
+- Created the W7D3 LlamaIndex project and document directory.
+- Created 5 text documents covering machine learning, RAG and embeddings, vector databases, MLOps, and supervised learning.
+- Configured LlamaIndex with Ollama embeddings using `nomic-embed-text`.
+- Configured the local LLM using `llama3.2:3b`.
+- Implemented `VectorStoreIndex` for in-memory document indexing.
+- Created a query engine and evaluated 10 questions.
+- Integrated LlamaIndex with ChromaDB for persistent vector storage.
+- Evaluated the same 10 questions using the ChromaDB index.
+- Saved query results and latency measurements to `outputs/w7d3_query_results.json`.
+- Created automated pytest tests.
+- Verified all 7 W7D3 tests passed.
+
+## Evaluation Results
+
+- In-memory index: 10 queries evaluated.
+- ChromaDB index: 10 queries evaluated.
+- Expected facts found in retrieved context: 10/10 for both indexes.
+- Average in-memory query latency: approximately 23.948 seconds.
+- Average ChromaDB query latency: approximately 12.067 seconds.
+- Latency includes retrieval and LLM generation; results may vary with system load and model warm-up.
+
+## Git Workflow
+
+- Verified W7D3 project files before staging.
+- Created at least two descriptive W7D3 commits.
+- Pushed the W7D3 changes to the Week 7 branch.
+- Verified pull request requirements.
+
+## CIA Review
+
+- Completed W7D3 CIA Full Stack Mentor Mode interaction #1.
+- Completed W7D3 CIA Full Stack Mentor Mode interaction #2.
+
+## Self-Review Status
+
+- LlamaIndex indexing and querying completed.
+- ChromaDB integration and latency comparison completed.
+- Automated tests passed.
+- Query result evidence saved.
+- CIA review requirements completed.
+- Git commits, push, and pull request requirements completed.
