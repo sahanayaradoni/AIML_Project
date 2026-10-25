@@ -1,0 +1,15 @@
+# Embeddings and Retrieval-Augmented Generation
+
+An embedding is a numerical vector representation of text that captures aspects of its semantic meaning. Texts with similar meanings can have similar embedding vectors.
+
+An embedding model converts text into vectors. The vectors can be stored in a vector database and compared using similarity measures such as cosine similarity.
+
+Retrieval-Augmented Generation (RAG) combines document retrieval with large language model generation. Instead of relying only on knowledge learned during training, a RAG system retrieves relevant information from a supplied knowledge base.
+
+A typical RAG workflow includes loading documents, splitting documents into chunks, generating embeddings, indexing the chunks, retrieving relevant chunks for a user query, and generating an answer grounded in the retrieved context.
+
+LlamaIndex is a framework that helps developers connect data sources to large language models. It provides document readers, indexes, retrievers, and query engines.
+
+A QueryEngine accepts a question, retrieves relevant indexed content, and uses a language model to synthesize a response.
+
+RAG can improve the relevance and traceability of answers, but its quality depends on document quality, retrieval accuracy, and the language model's ability to use the retrieved context.

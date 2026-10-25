@@ -1,0 +1,15 @@
+# Supervised Learning
+
+Supervised learning is a machine learning approach in which a model learns from labeled examples. Each training example contains input features and a known target or label.
+
+Classification is used to predict discrete categories. Examples include identifying spam emails, detecting fraudulent transactions, and classifying images.
+
+Regression is used to predict continuous numerical values. Examples include predicting house prices, estimating sales, and forecasting temperatures.
+
+The dataset is commonly divided into training, validation, and test sets. The training set is used to fit the model, the validation set helps tune model settings, and the test set estimates performance on unseen data.
+
+Overfitting occurs when a model learns the training data too closely and performs poorly on new examples. Regularization, cross-validation, and suitable model complexity can help reduce overfitting.
+
+Common supervised learning algorithms include linear regression, logistic regression, decision trees, random forests, support vector machines, and k-nearest neighbors.
+
+The choice of evaluation metric depends on the task. Accuracy, precision, recall, and F1-score are common classification metrics, while mean absolute error and root mean squared error are used for regression.

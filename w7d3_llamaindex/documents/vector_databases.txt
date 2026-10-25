@@ -1,0 +1,15 @@
+# Vector Databases
+
+A vector database stores and retrieves numerical vector embeddings. It helps applications find information that is semantically similar to a query.
+
+Unlike a traditional keyword search, vector similarity search can identify related content even when the exact words differ.
+
+ChromaDB is an open-source vector database that supports storing embeddings and their associated documents and metadata. It can perform similarity searches over stored vectors.
+
+LlamaIndex integrates with ChromaDB through a vector store adapter. Documents can be indexed in a ChromaDB collection and retrieved later using a query engine.
+
+A persistent vector store saves data to disk so that indexed documents can be reused across program runs. An in-memory index, in contrast, generally exists only for the lifetime of the running program unless it is explicitly persisted.
+
+Similarity search commonly uses cosine similarity or distance metrics to rank candidate vectors. The number of retrieved results can be controlled using a top-k parameter.
+
+Vector databases are used in semantic search, retrieval-augmented generation, recommendation systems, and knowledge assistants.
